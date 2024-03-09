@@ -6,7 +6,10 @@
 ## Testnets
 
 * [Babylon](testnets/babylon.md)
-* [CrossFi](testnets/crossfi.md)
+* [CrossFi](testnets/crossfi/README.md)
+  * [Endpoints](testnets/crossfi/endpoints.md)
+  * [Installation](testnets/crossfi/installation.md)
+  * [Cheat Sheet](testnets/crossfi/cheat-sheet.md)
 * [NuLink](testnets/nulink.md)
 * [Shardeum](testnets/shardeum.md)
 * [Side Protocol](testnets/side-protocol.md)
