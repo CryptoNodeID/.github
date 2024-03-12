@@ -1,6 +1,4 @@
-# Endpoints
-
-Explorer: [https://testnet.cryptonode.id/crossfi](https://testnet.cryptonode.id/crossfi)
+# RPC, API, JSON-RPC
 
 RPC: [https://crossfi-testnet-rpc.cryptonode.id](https://crossfi-testnet-rpc.cryptonode.id)
 

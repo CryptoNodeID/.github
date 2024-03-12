@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/Screenshot 2024-03-11 174417.png
-coverY: 67.57333333333332
+coverY: 55.98933333333333
 layout:
   cover:
     visible: true
@@ -19,3 +19,10 @@ layout:
 
 # CrossFi
 
+| Chain ID              | Latest Version Tag | Wasm |
+| --------------------- | ------------------ | ---- |
+| crossfi-evm-testnet-1 | v0.3.0             | OFF  |
+
+<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/crossfi](https://testnet.cryptonode.id/crossfi)
+
+<img src="https://web.telegram.org/a/img-apple-64/1f6a8.png" alt="🚨" data-size="line">Monitoring: [https://monitor.cryptonode.id](https://monitor.cryptonode.id/)

@@ -7,8 +7,9 @@
 
 * [Babylon](testnets/babylon.md)
 * [CrossFi](testnets/crossfi/README.md)
-  * [Endpoints](testnets/crossfi/endpoints.md)
+  * [RPC, API, JSON-RPC](testnets/crossfi/rpc-api-json-rpc.md)
   * [Installation](testnets/crossfi/installation.md)
+  * [Validator](testnets/crossfi/validator.md)
   * [Cheat Sheet](testnets/crossfi/cheat-sheet.md)
 * [NuLink](testnets/nulink.md)
 * [Shardeum](testnets/shardeum.md)
