@@ -1,6 +1,6 @@
 ---
-cover: ../../.gitbook/assets/Screenshot 2024-03-11 174417.png
-coverY: 55.98933333333333
+cover: ../../.gitbook/assets/CrossFi.png
+coverY: 0
 layout:
   cover:
     visible: true
