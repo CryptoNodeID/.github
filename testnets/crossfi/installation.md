@@ -70,7 +70,7 @@ tar -xvzf cosmovisor-v1.5.0-linux-amd64.tar.gz
 
 #Copy Binaries
 cp cosmovisor ${INSTALLATION_DIR}/bin/cosmovisor
-cp ${INSTALLATION_DIR}/${DAEMON_NAME} ${DAEMON_HOME}/cosmovisor/genesis/bin
+cp ${INSTALLATION_DIR}/bin/${DAEMON_NAME} ${DAEMON_HOME}/cosmovisor/genesis/bin
 sudo ln -s ${INSTALLATION_DIR}/bin/cosmovisor /usr/local/bin/cosmovisor -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/genesis ${DAEMON_HOME}/cosmovisor/current -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/${DAEMON_NAME} -f
