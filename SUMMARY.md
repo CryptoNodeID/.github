@@ -1,17 +1,19 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Basics](basics.md)
-
-## Testnets
-
-* [Babylon](testnets/babylon.md)
-* [CrossFi](testnets/crossfi/README.md)
-  * [RPC, API, JSON-RPC](testnets/crossfi/rpc-api-json-rpc.md)
-  * [Installation](testnets/crossfi/installation.md)
-  * [Validator](testnets/crossfi/validator.md)
-  * [Cheat Sheet](testnets/crossfi/cheat-sheet.md)
-* [NuLink](testnets/nulink.md)
-* [Shardeum](testnets/shardeum.md)
-* [Side Protocol](testnets/side-protocol.md)
-* [Stratis EVM](testnets/stratis-evm.md)
+* [Basics](basics/README.md)
+  * [Server Preparation](basics/server-preparation.md)
+  * [Setting up DNS](basics/setting-up-dns.md)
+  * [Routing using NGINX](basics/routing-using-nginx.md)
+  * [Setting up SSL](basics/setting-up-ssl.md)
+* [Testnets](testnets/README.md)
+  * [CrossFi](testnets/crossfi/README.md)
+    * [RPC, API, JSON-RPC](testnets/crossfi/rpc-api-json-rpc.md)
+    * [Installation](testnets/crossfi/installation.md)
+    * [Validator](testnets/crossfi/validator.md)
+    * [Cheat Sheet](testnets/crossfi/cheat-sheet.md)
+  * [NuLink](testnets/nulink.md)
+  * [Shardeum](testnets/shardeum.md)
+  * [Side Protocol](testnets/side-protocol.md)
+  * [Stratis EVM](testnets/stratis-evm.md)
+  * [Babylon](testnets/babylon.md)

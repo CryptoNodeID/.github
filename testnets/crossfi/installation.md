@@ -44,11 +44,7 @@ This step is optional, but we recommend you to do it for convenience
 
 ### Install dependencies
 
-```sh
-sudo apt -q update
-sudo apt -qy install curl git jq lz4 build-essential snapd unzip
-sudo apt -qy upgrade
-```
+Please refer to [server-preparation.md](../../basics/server-preparation.md "mention")
 
 ### Prepare installation
 
