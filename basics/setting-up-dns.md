@@ -5,7 +5,7 @@
 ### Domain
 
 You will need to have your own domain name first before we can continue.\
-If you don't have your domain yet, you can Get your domain here (starting from $0)
+If you don't have your domain yet, you can [Get your domain here (starting from $0)](https://www.jdoqocy.com/he102cy63y5LNMNNMTNQVLNNQOVMQO?sid=cryptonode.id)
 
 ### Cloudflare
 
