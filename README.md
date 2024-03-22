@@ -16,8 +16,6 @@ You can join our Telegram Channel here :
 
 ### List of Our Works
 
-* Babylon Validator Node - Status : 🟡Tested, Pending faucet
-  * [Guide ](testnets/babylon.md)| [Telegram](https://t.me/CryptoNodeID/31) | [Github](https://github.com/CryptoNodeID/babylon)
 * CrossFi Validator Node - Status : 🟢Online
   * [Guide ](testnets/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
 * NuLink Worker Node - Status : 🟢Online
