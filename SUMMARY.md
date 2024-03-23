@@ -8,7 +8,7 @@
   * [Setting up SSL](basics/setting-up-ssl.md)
 * [Testnets](testnets/README.md)
   * [CrossFi](testnets/crossfi/README.md)
-    * [RPC, API, JSON-RPC](testnets/crossfi/rpc-api-json-rpc.md)
+    * [Endpoints and Sync](testnets/crossfi/endpoints-and-sync.md)
     * [Installation](testnets/crossfi/installation.md)
     * [Validator](testnets/crossfi/validator.md)
     * [Cheat Sheet](testnets/crossfi/cheat-sheet.md)
