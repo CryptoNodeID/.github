@@ -24,7 +24,7 @@ You can join our Telegram Channel here :
   * [Guide ](testnets/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
 * Side Protocol Validator Node - Status : 🟢Online
   * [Guide ](testnets/side-protocol.md)| [Telegram](https://t.me/CryptoNodeID/24) | [Github](https://github.com/CryptoNodeID/side)
-* StratisEVM (STRAX) Validator Node - Status : 🟢Online
+* StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
   * [Guide ](testnets/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
 
 
