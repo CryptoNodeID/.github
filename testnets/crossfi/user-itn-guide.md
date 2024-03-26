@@ -83,6 +83,15 @@ Click on "Earn XFT" Button on the left side bar to see tasks and get XFT as rewa
 To do tasks, you might need to share and use more addresses, join our [Telegram channel](https://t.me/CryptoNodeID/60) so you can share your address and find some destination addresses
 {% endhint %}
 
+{% hint style="success" %}
+You can use below addresses if you don't have any destination address\
+\
+EVM: \
+`0x0997e609f67204fcf528e1a78169f8d5fef8f552` `0xbed23f30666734BF5C83719b9740C66488012E39`\
+Cosmos : \
+`mx1pxt7vz0kwgz0eafguxncz60c6hl03a2juxrrl5` `mx1hmfr7vrxvu6t7hyrwxdewsxxvjyqzt3euzc7ts`
+{% endhint %}
+
 ### Send
 
 Send is the standard transaction type for sending XFI and MPX coins.\
@@ -176,6 +185,26 @@ This step is similar to [#evm](user-itn-guide.md#evm "mention")send, but it invo
 It can be done via Metamask
 
 {% hint style="info" %}
-You will need to import the toket first before sending.\
+You will need to import the token first before sending.\
 Here's the smart contract address : `0xDb5C548684221Ce2f55F16456Ec5Cf43a028D8e9`
 {% endhint %}
+
+To import the token, you can do as follows
+
+Go to Metamask, unlock and click on "+ Import tokens"
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-26 114815.png" alt=""><figcaption></figcaption></figure>
+
+Paste the contract address `0xDb5C548684221Ce2f55F16456Ec5Cf43a028D8e9` to "Token contract address" field, wait for it to load and click "Next"
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-26 115459.png" alt=""><figcaption></figcaption></figure>
+
+And then click on "Import"
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-26 115542.png" alt=""><figcaption></figcaption></figure>
+
+Then it will show up like this
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You can proceed to send it to your desired address

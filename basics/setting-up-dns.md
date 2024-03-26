@@ -21,11 +21,11 @@ In this case, we will use our crossfi setup as example.
 
 After you registered to Cloudflare, you will see your dashboard, click on "**Add a site**" to continue
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Fill in your domain name (example: cryptonode.id), then click continue
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cloudflare will prompt you to update your nameserver settings to their nameserver, you can set it up in your domain provider
 
