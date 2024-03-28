@@ -124,7 +124,6 @@ server {
     add_header 'Access-Control-Allow-Headers' 'Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range';
 
     location / {
-        limit_req zone=ip burst=12 delay=8;
         proxy_pass http://127.0.0.1:1317;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
