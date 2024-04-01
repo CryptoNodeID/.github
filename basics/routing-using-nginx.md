@@ -4,11 +4,11 @@
 
 You will need NGINX installed and your Node running before you continue with this.\
 For NGINX, it is already covered in [server-preparation.md](server-preparation.md "mention")\
-For Nodes, you can look for the guides in [testnets](../testnets/ "mention") section
+For Nodes, you can look for the guides in [testnet](../testnet/ "mention") section
 
 ## Create per subdomain NGINX config
 
-In this section, we will use [crossfi](../testnets/crossfi/ "mention") as our reference project
+In this section, we will use [crossfi](../testnet/crossfi/ "mention") as our reference project
 
 ### API
 

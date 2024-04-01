@@ -1,12 +1,12 @@
 # Introduction
 
-### CryptoNodeID
+## CryptoNodeID
 
-#### Who are we ?
+### Who are we ?
 
 We're a bunch of people who like to share our work and educate people who don't know about how to do it but really interested in it. We're not some Pro - Pro, still learning by doing, hope we can learn together 😁
 
-#### How to contact us ?
+### How to contact us ?
 
 You can join our Telegram Channel here :
 
@@ -14,18 +14,25 @@ You can join our Telegram Channel here :
 * Comment Group : [https://t.me/CryptoNodeIDGroup](https://t.me/CryptoNodeIDGroup)
 * Focus Discussion Group : [https://t.me/CryptoNodeIDLearn](https://t.me/CryptoNodeIDLearn)
 
-### List of Our Works
+## List of Our Works
+
+### Mainnet
+
+* Humanode Validator - Status : 🟢Online
+  * [Guide](mainnet/humanode/) | [Telegram](https://t.me/CryptoNodeID/77)
+
+### Testnet
 
 * CrossFi Validator Node - Status : 🟢Online
-  * [Guide ](testnets/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
+  * [Guide ](testnet/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
 * NuLink Worker Node - Status : 🟢Online
-  * [Guide ](testnets/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
+  * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
 * Shardeum (SHM) Validator Node - Status : 🟢Online
-  * [Guide ](testnets/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
+  * [Guide ](testnet/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
 * Side Protocol Validator Node - Status : 🟢Online
-  * [Guide ](testnets/side-protocol.md)| [Telegram](https://t.me/CryptoNodeID/24) | [Github](https://github.com/CryptoNodeID/side)
+  * [Guide ](testnet/side-protocol.md)| [Telegram](https://t.me/CryptoNodeID/24) | [Github](https://github.com/CryptoNodeID/side)
 * StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
-  * [Guide ](testnets/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
+  * [Guide ](testnet/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
 
 
 

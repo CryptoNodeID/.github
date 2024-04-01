@@ -1,7 +1,8 @@
 # Installation
 
-## 🖥️Hardware Requirements
+## 🖥️System Requirements
 
+\- OS: Linux\
 \- CPU: 8 Core(s)\
 \- Memory: 32GB\
 \- Storage: 500GB-2TB
