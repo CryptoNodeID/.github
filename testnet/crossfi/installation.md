@@ -168,3 +168,9 @@ rm -f cosmovisor-v1.5.0-linux-amd64.tar.gz
 rm -f crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
 rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 ```
+
+## ⚙️Automatic Installation
+
+You can visit our repository and follow the instruction there
+
+[https://github.com/CryptoNodeID/crossfi](https://github.com/CryptoNodeID/crossfi)
