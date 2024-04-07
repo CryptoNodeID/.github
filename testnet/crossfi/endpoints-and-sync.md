@@ -8,7 +8,7 @@ JSON-RPC: [https://crossfi-testnet-jsonrpc.cryptonode.id](https://crossfi-testne
 
 {% code title="Peers" %}
 ```sh
-9a0bacb836102d71abd685651d8edb4b3694224b@crossfi-testnet-peer.cryptonode.id:26656
+9a0bacb836102d71abd685651d8edb4b3694224b@crossfi-testnet-peer.cryptonode.id:10656
 ```
 {% endcode %}
 
@@ -22,7 +22,7 @@ cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_vali
 
 crossfid tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="9a0bacb836102d71abd685651d8edb4b3694224b@crossfi-testnet-peer.cryptonode.id:26656"
+PEERS="9a0bacb836102d71abd685651d8edb4b3694224b@crossfi-testnet-peer.cryptonode.id:10656"
 SNAP_RPC="https://crossfi-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
