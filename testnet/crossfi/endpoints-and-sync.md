@@ -15,14 +15,17 @@ JSON-RPC: [https://crossfi-testnet-jsonrpc.cryptonode.id](https://crossfi-testne
 ## State Sync
 
 ```sh
-sudo systemctl stop crossfid
+sudo systemctl stop crossfi-testnet
 
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/data/priv_validator_state.json.backup
 cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_validator_key.json.backup
 
 crossfid tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
+PEERS="9a0bacb836102d71abd685651d8edb4b3694224b@crossfi-testnet-peer.cryptonode.id:26656"
 SNAP_RPC="https://crossfi-testnet-rpc.cryptonode.id:443"
+
+sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000));
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash) 
@@ -38,5 +41,5 @@ sed -i \
 mv ${DAEMON_HOME}/data/priv_validator_state.json.backup ${DAEMON_HOME}/data/priv_validator_state.json
 mv ${DAEMON_HOME}/config/priv_validator_key.json.backup ${DAEMON_HOME}/config/priv_validator_key.json
 
-sudo systemctl restart crossfid && sudo journalctl -u crossfid -f
+sudo systemctl restart crossfi-testnet && sudo journalctl -u crossfi-testnet -f
 ```
