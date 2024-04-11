@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/CrossFi.png
+cover: ../../.gitbook/assets/CrossFi banner.png
 coverY: 0
 layout:
   cover:
