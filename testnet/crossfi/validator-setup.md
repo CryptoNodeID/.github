@@ -1,4 +1,4 @@
-# Validator
+# Validator Setup
 
 ## 📶Running a Validator
 
@@ -117,5 +117,5 @@ crossfid start --halt-height HALT_HEIGHT
 ```
 
 {% hint style="info" %}
-replace HALT\_HEIGHT  with number shown from result of [#get-last-block-height](validator.md#get-last-block-height "mention") and add some (like 100 or 500)
+replace HALT\_HEIGHT  with number shown from result of [#get-last-block-height](validator-setup.md#get-last-block-height "mention") and add some (like 100 or 500)
 {% endhint %}

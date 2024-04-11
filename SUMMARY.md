@@ -16,7 +16,7 @@
   * [CrossFi](testnet/crossfi/README.md)
     * [Endpoints and Sync](testnet/crossfi/endpoints-and-sync.md)
     * [Installation](testnet/crossfi/installation.md)
-    * [Validator](testnet/crossfi/validator.md)
+    * [Validator Setup](testnet/crossfi/validator-setup.md)
     * [Cheat Sheet](testnet/crossfi/cheat-sheet.md)
     * [User ITN Guide](testnet/crossfi/user-itn-guide.md)
   * [NuLink](testnet/nulink.md)
