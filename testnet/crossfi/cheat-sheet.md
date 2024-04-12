@@ -16,7 +16,7 @@ If you use our auto-installation, we've included several scripts like:
 
 Here's other useful commands you might need
 
-## Service operations ⚙️ <a href="#service-operations" id="service-operations"></a>
+## ⚙️Service operations <a href="#service-operations" id="service-operations"></a>
 
 ### Check logs
 
@@ -66,7 +66,7 @@ sudo systemctl stop crossfi-testnet
 sudo systemctl status crossfi-testnet
 ```
 
-## Node operations 🖥️
+## 🖥️Node operations
 
 ### Node info
 
@@ -104,7 +104,7 @@ crossfid keys list
 crossfid q bank balances $(crossfid keys show $WALLET -a)
 ```
 
-## Transaction operations 💱
+## 💱Transaction operations
 
 Withdraw all rewards
 
@@ -138,7 +138,7 @@ crossfid tx bank send $WALLET_ADDRESS <TO_WALLET_ADDRESS> 1000000mpx --gas auto 
 ```
 {% endcode %}
 
-## Validator operations ✅
+## ✅Validator operations
 
 Create validator
 

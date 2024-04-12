@@ -8,8 +8,27 @@
 \- Storage: 160 GB disk space \
 \- Network: 100 Mbps internet connection
 
-## Video Installation Instruction
+## 📽️Video Installation Instruction
 
 You can follow instruction in this video to install your Humanode Validator node
 
 Youtube Video: [https://youtu.be/AAkVG\_g73-g](https://youtu.be/AAkVG\_g73-g)
+
+### Special instruction for Ubuntu 22.04 user
+
+When you encounter error while generating address, you can execute this command in your host server and continue with the installation
+
+```sh
+mkdir $HOME/opt && cd $HOME/opt
+wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
+tar -zxvf openssl-1.1.1o.tar.gz
+cd openssl-1.1.1o
+./config && make && make test
+mkdir $HOME/opt/lib
+mv $HOME/opt/openssl-1.1.1o/libcrypto.so.1.1 $HOME/opt/lib/
+mv $HOME/opt/openssl-1.1.1o/libssl.so.1.1 $HOME/opt/lib/
+ln -s $HOME/opt/lib/libssl.so.1.1 /usr/lib/libssl.so.1.1
+ln -s $HOME/opt/lib/libssl.so.1.1 /usr/lib64/libssl.so.1.1
+ln -s $HOME/opt/lib/libcrypto.so.1.1 /usr/lib/libcrypto.so.1.1
+ln -s $HOME/opt/lib/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1
+```
