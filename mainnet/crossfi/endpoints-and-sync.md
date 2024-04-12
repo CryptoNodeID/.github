@@ -1,29 +1,29 @@
 # Endpoints and Sync
 
-RPC: [https://crossfi-testnet-rpc.cryptonode.id](https://crossfi-testnet-rpc.cryptonode.id)
+RPC: [https://crossfi-mainnet-rpc.cryptonode.id](https://crossfi-mainnet-rpc.cryptonode.id)
 
-API: [https://crossfi-testnet-api.cryptonode.id](https://crossfi-testnet-api.cryptonode.id)&#x20;
-
-JSON-RPC: [https://crossfi-testnet-jsonrpc.cryptonode.id](https://crossfi-testnet-jsonrpc.cryptonode.id)&#x20;
+API: [https://crossfi-mainnet-api.cryptonode.id](https://crossfi-mainnet-api.cryptonode.id)
 
 {% code title="Peers" %}
 ```sh
-d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@crossfi-testnet-peer.cryptonode.id:20656
+44ca9e03a9c016ce148d19e877a8652662bbd71b@crossfi-mainnet-peer.cryptonode.id:30656
 ```
 {% endcode %}
 
 ## State Sync
 
 ```sh
-sudo systemctl stop crossfi-testnet
+DAEMON_HOME="~/.mineplex-chain"
+
+sudo systemctl stop crossfi-mainnet
 
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/data/priv_validator_state.json.backup
 cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_validator_key.json.backup
 
 crossfid tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@crossfi-testnet-peer.cryptonode.id:20656,66bdf53ec0c2ceeefd9a4c29d7f7926e136f114a@crossfi-testnet-peer.itrocket.net:36656,4b6c13b8820fd6c1bcf5e36c3097a1b64e4e3b8c@testnet-crossfi.konsortech.xyz:11656"
-SNAP_RPC="https://crossfi-testnet-rpc.cryptonode.id:443"
+PEERS="44ca9e03a9c016ce148d19e877a8652662bbd71b@crossfi-mainnet-peer.cryptonode.id:30656,94bd757a9f002e5ec72f1f7d0a1f96eec0d49f1b@3.95.243.5:30656,3f3d80c93d3af57ff3ca5dfe45ba2b523fa8f056@mainnet-crossfi.konsortech.xyz:16656,2c8951227c667c8833e2930bc07ce1a9f0acbe28@seed-v2.mineplex.io:30656,e9fd5cca36b36d6646cfa65ff72b2f22abec4667@46.101.138.73:30656"
+SNAP_RPC="https://crossfi-mainnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
@@ -41,5 +41,5 @@ sed -i \
 mv ${DAEMON_HOME}/data/priv_validator_state.json.backup ${DAEMON_HOME}/data/priv_validator_state.json
 mv ${DAEMON_HOME}/config/priv_validator_key.json.backup ${DAEMON_HOME}/config/priv_validator_key.json
 
-sudo systemctl restart crossfi-testnet && sudo journalctl -u crossfi-testnet -f
+sudo systemctl restart crossfi-mainnet && sudo journalctl -u crossfi-mainnet -f
 ```

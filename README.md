@@ -1,10 +1,29 @@
+---
+cover: .gitbook/assets/BTC.webp
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Introduction
 
 ## CryptoNodeID
 
 ### Who are we ?
 
-We're a bunch of people who like to share our work and educate people who don't know about how to do it but really interested in it. We're not some Pro - Pro, still learning by doing, hope we can learn together 😁
+We're a community who like to share our work and educate people who don't know about how to do it but really interested in it. We're not some Pro - Pro, still learning by doing, hope we can learn together 😁
 
 ### How to contact us ?
 
@@ -20,6 +39,8 @@ You can join our Telegram Channel here :
 
 * Humanode Validator - Status : 🟢Online
   * [Guide](mainnet/humanode/) | [Telegram](https://t.me/CryptoNodeID/77)
+* CrossFi Validator Node - Status : 🟢Online
+  * [Guide](mainnet/crossfi/) | [Github](https://github.com/CryptoNodeID/crossfi)
 
 ### Testnet
 
