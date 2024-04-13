@@ -15,7 +15,10 @@ d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@crossfi-testnet-peer.cryptonode.id:2065
 ## State Sync
 
 ```sh
-sudo systemctl stop crossfi-testnet
+DAEMON_HOME=${HOME}/.crossfi-testnet
+SERVICE_NAME=crossfi-testnet
+
+sudo systemctl stop ${SERVICE_NAME}
 
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/data/priv_validator_state.json.backup
 cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_validator_key.json.backup
@@ -31,15 +34,36 @@ BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000));
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash) 
 
 sed -i \
-  -e "s|^  enable *=.*|  enable = "true"|" \
-  -e "s|^  rpc_servers *=.*|  rpc_servers = \"$SNAP_RPC,$SNAP_RPC\"|" \
-  -e "s|^  trust_height *=.*|  trust_height = $BLOCK_HEIGHT|" \
-  -e "s|^  trust_hash *=.*|  trust_hash = \"$TRUST_HASH\"|" \
-  -e "s|^  seeds *=.*|  seeds = \"\"|" \
+  -e "s|^.*enable *=.*|enable = "true"|" \
+  -e "s|^.*rpc_servers *=.*|rpc_servers = \"$SNAP_RPC,$SNAP_RPC\"|" \
+  -e "s|^.*trust_height *=.*|trust_height = $BLOCK_HEIGHT|" \
+  -e "s|^.*trust_hash *=.*|trust_hash = \"$TRUST_HASH\"|" \
+  -e "s|^.*seeds *=.*|seeds = \"\"|" \
   ${DAEMON_HOME}/config/config.toml
   
 mv ${DAEMON_HOME}/data/priv_validator_state.json.backup ${DAEMON_HOME}/data/priv_validator_state.json
 mv ${DAEMON_HOME}/config/priv_validator_key.json.backup ${DAEMON_HOME}/config/priv_validator_key.json
 
-sudo systemctl restart crossfi-testnet && sudo journalctl -u crossfi-testnet -f
+sudo systemctl restart ${SERVICE_NAME}
+sudo journalctl -fu ${SERVICE_NAME} --no-hostname -o cat
+```
+
+## Snapshot Restore
+
+```sh
+DAEMON_HOME=$HOME/.crossfi-testnet
+SERVICE_NAME=crossfi-testnet
+NETWORK=crossfi-testnet
+
+sudo systemctl stop ${SERVICE_NAME}
+cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/priv_validator_state.json.backup
+rm -rf ${DAEMON_HOME}/data
+mkdir -p ${DAEMON_HOME}/data
+
+SNAP_NAME=$(curl -s https://snapshot.cryptonode.id/${NETWORK}/ | egrep -o ">${NETWORK}-snapshot.*\.tar.lz4" | tr -d ">")
+curl https://snapshot.cryptonode.id/${NETWORK}/${SNAP_NAME} | lz4 -dc - | tar -xf - -C ${DAEMON_HOME}/data
+mv ${DAEMON_HOME}/priv_validator_state.json.backup ${DAEMON_HOME}/data/priv_validator_state.json
+
+sudo systemctl restart ${SERVICE_NAME}
+sudo journalctl -fu ${SERVICE_NAME} --no-hostname -o cat
 ```
