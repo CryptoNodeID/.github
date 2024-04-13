@@ -3,15 +3,13 @@
 If you use our auto-installation, we've included several scripts like:
 
 ```sh
-
-./list_keys.sh
-./check_balance.sh
-./create_validator.sh
-./unjail_validator.sh
-./check_validator.sh
-./start_crossfi.sh
-./check_log.sh
-
+./list_keys_mainnet.sh
+./check_balance_mainnet.sh
+./create_validator_mainnet.sh
+./unjail_validator_mainnet.sh
+./check_validator_mainnet.sh
+./start_crossfi_mainnet.sh
+./check_log_mainnet.sh
 ```
 
 Here's other useful commands you might need
@@ -21,13 +19,13 @@ Here's other useful commands you might need
 ### Check logs
 
 ```sh
-sudo journalctl -fu crossfi-testnet
+sudo journalctl -fu crossfi-mainnet
 ```
 
 ### Check service status
 
 ```sh
-sudo systemctl status crossfi-testnet
+sudo systemctl status crossfi-mainnet
 ```
 
 ### Reload service
@@ -39,31 +37,31 @@ sudo systemctl daemon-reload
 ### Enable service
 
 ```
-sudo systemctl enable crossfi-testnet
+sudo systemctl enable crossfi-mainnet
 ```
 
 ### Disable service
 
 ```
-sudo systemctl disable crossfi-testnet
+sudo systemctl disable crossfi-mainnet
 ```
 
 ### Start service
 
 ```
-sudo systemctl start crossfi-testnet
+sudo systemctl start crossfi-mainnet
 ```
 
 ### Stop service
 
 ```
-sudo systemctl stop crossfi-testnet
+sudo systemctl stop crossfi-mainnet
 ```
 
 ### Restart service
 
 ```
-sudo systemctl status crossfi-testnet
+sudo systemctl status crossfi-mainnet
 ```
 
 ## 🖥️Node operations
@@ -109,8 +107,8 @@ crossfid q bank balances $(crossfid keys show $WALLET -a)
 Withdraw all rewards
 
 {% code overflow="wrap" %}
-```
-crossfid tx distribution withdraw-all-rewards --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx
+```sh
+crossfid tx distribution withdraw-all-rewards --from $WALLET --chain-id mineplex-mainnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx
 ```
 {% endcode %}
 
@@ -118,7 +116,7 @@ Self delegate
 
 {% code overflow="wrap" %}
 ```
-crossfid tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
+crossfid tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id mineplex-mainnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
 ```
 {% endcode %}
 
@@ -126,7 +124,7 @@ Unbond
 
 {% code overflow="wrap" %}
 ```
-crossfid tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
+crossfid tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id mineplex-mainnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
 ```
 {% endcode %}
 
@@ -155,7 +153,7 @@ crossfid tx staking create-validator \
 --moniker "$MONIKER" \
 --identity "put your keybase pgp here" \
 --details "anything you want to say here" \
---chain-id crossfi-evm-testnet-1 \
+--chain-id mineplex-mainnet-1 \
 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx \
 -y
 ```
@@ -175,7 +173,7 @@ crossfid tx staking edit-validator \
 --identity "put your keybase pgp here" \
 --details "anything you want to say here" \
 --from $WALLET \
---chain-id crossfi-evm-testnet-1 \
+--chain-id mineplex-mainnet-1 \
 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx \
 -y
 ```

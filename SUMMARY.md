@@ -15,7 +15,6 @@
     * [Installation](mainnet/crossfi/installation.md)
     * [Validator Setup](mainnet/crossfi/validator-setup.md)
     * [Cheat Sheet](mainnet/crossfi/cheat-sheet.md)
-    * [User ITN Guide](mainnet/crossfi/user-itn-guide.md)
 * [Testnet](testnet/README.md)
   * [0G Evmos](testnet/0g-evmos/README.md)
     * [Endpoints and Sync](testnet/0g-evmos/endpoints-and-sync.md)

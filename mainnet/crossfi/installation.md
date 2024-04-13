@@ -15,9 +15,9 @@ If you use other OS, please modify the commands accordingly
 ### Set environment
 
 ```sh
-export INSTALLATION_DIR=$HOME/appl
+export INSTALLATION_DIR=${HOME}/appl
 export DAEMON_NAME=crossfid
-export DAEMON_HOME=${INSTALLATION_DIR}/mainnet
+export DAEMON_HOME=${HOME}/.mineplex-chain
 export SERVICE_NAME=crossfi-mainnet
 export MONIKER="YOUR_NODE_NAME_HERE"
 export WALLET="YOUR_WALLET_NAME_HERE"
@@ -50,6 +50,7 @@ Please refer to [server-preparation.md](../../basics/server-preparation.md "ment
 ### Prepare installation
 
 ```sh
+mkdir -p ${INSTALLATION_DIR}/bin
 mkdir -p ${DAEMON_HOME}/cosmovisor/genesis/bin
 mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 ```
@@ -61,18 +62,17 @@ mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 cd ${INSTALLATION_DIR}
 
 #Download CrossFi Daemon and basic setup
-wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
-tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
-git clone https://github.com/crossfichain/testnet.git
+wget https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz && tar -xf mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+mv mineplex-chaind bin/${DAEMON_NAME}
+git clone https://github.com/crossfichain/mainnet.git
 
 #Download and install cosmovisor
 wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.5.0/cosmovisor-v1.5.0-linux-amd64.tar.gz
 tar -xvzf cosmovisor-v1.5.0-linux-amd64.tar.gz
 
 #Copy Binaries
-cp cosmovisor ${INSTALLATION_DIR}/bin/cosmovisor
+cp cosmovisor /usr/local/bin/cosmovisor -f
 cp ${INSTALLATION_DIR}/bin/${DAEMON_NAME} ${DAEMON_HOME}/cosmovisor/genesis/bin
-sudo ln -s ${INSTALLATION_DIR}/bin/cosmovisor /usr/local/bin/cosmovisor -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/genesis ${DAEMON_HOME}/cosmovisor/current -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/${DAEMON_NAME} -f
 ```
@@ -83,6 +83,10 @@ sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/$
 ```sh
 crossfid --home ${DAEMON_HOME} version
 ```
+
+{% hint style="info" %}
+For mainnet, the version should be `0.1.1`
+{% endhint %}
 
 ### Create or Restore Wallet
 
@@ -125,9 +129,9 @@ You can change the number for each parameter as you want
 ### Setting up Cosmovisor
 
 ```bash
-sudo tee /etc/systemd/system/crossfi-testnet.service > /dev/null <<EOF  
+sudo tee /etc/systemd/system/crossfi-mainnet.service > /dev/null <<EOF  
 [Unit]
-Description=CrossFi Testnet Daemon (cosmovisor)
+Description=CrossFi Mainnet Daemon (cosmovisor)
 After=network-online.target
 
 [Service]
@@ -151,21 +155,21 @@ EOF
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable crossfi-testnet.service
-sudo systemctl start crossfi-testnet.service
+sudo systemctl enable crossfi-mainnet.service
+sudo systemctl start crossfi-mainnet.service
 ```
 
 #### Check service log
 
 ```bash
-sudo journalctl -xfu crossfi-testnet
+sudo journalctl -xfu crossfi-mainnet
 ```
 
 ### Cleanup
 
 ```bash
 rm -f cosmovisor-v1.5.0-linux-amd64.tar.gz
-rm -f crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
+rm -f mineplex-2-node._v0.1.1_linux_amd64.tar.gz
 rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 ```
 

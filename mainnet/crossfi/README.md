@@ -21,7 +21,7 @@ layout:
 
 | Chain ID           | Latest Version Tag | Wasm |
 | ------------------ | ------------------ | ---- |
-| mineplex-mainnet-1 | 0.1.1              | OFF  |
+| mineplex-mainnet-1 | v0.1.1             | OFF  |
 
 <img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://explorer.cryptonode.id/crossfi](https://explorer.cryptonode.id/crossfi)\
 <img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [https://explorer.cryptonode.id/crossfi/staking/](https://explorer.cryptonode.id/crossfi/staking/mxvaloper1r4c4ggz5t643kqgnjt9jww42lzfy03ktusuduc)\
