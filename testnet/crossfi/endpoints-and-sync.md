@@ -15,8 +15,8 @@ d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@crossfi-testnet-peer.cryptonode.id:2065
 ## State Sync
 
 ```sh
-DAEMON_HOME=${HOME}/.crossfi-testnet
-SERVICE_NAME=crossfi-testnet
+DAEMON_HOME="${HOME}/.crossfi-testnet"
+SERVICE_NAME="crossfi-testnet"
 
 sudo systemctl stop ${SERVICE_NAME}
 
