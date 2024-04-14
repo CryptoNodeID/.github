@@ -29,3 +29,6 @@
   * [Side Protocol](testnet/side-protocol/README.md)
     * [Endpoints and Sync](testnet/side-protocol/endpoints-and-sync.md)
   * [Stratis EVM](testnet/stratis-evm.md)
+* [Supporting Tools](supporting-tools/README.md)
+  * [Cosmos Explorer](supporting-tools/cosmos-explorer/README.md)
+    * [Installation](supporting-tools/cosmos-explorer/installation.md)
