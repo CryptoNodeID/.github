@@ -9,21 +9,21 @@ You can buy it from [Kucoin](https://www.kucoin.com/r/rf/2Kxd6rb), or you can [c
 
 Once  you've done the installation, your launcher will show QR like below (QR censored for security purpose).
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Scan it using your phone and it will direct you to a dashboard like below
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
 
 ## Setup Node
 
 Now, you click on setup node, and then enroll
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="288"><figcaption></figcaption></figure>
 
 After that click on "Yes, I understand"
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="288"><figcaption></figcaption></figure>
 
 You will be prompted to do face recognition verification. Click on "I'm Ready" and do as instructed
 

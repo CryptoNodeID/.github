@@ -37,22 +37,22 @@ You can join our Telegram Channel here :
 
 ### Mainnet
 
-* Humanode Validator - Status : 🟢Online
+* <img src=".gitbook/assets/humanode.png" alt="" data-size="line">Humanode Validator - Status : 🟢Online
   * [Guide](mainnet/humanode/) | [Telegram](https://t.me/CryptoNodeID/77)
-* CrossFi Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/image.png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide](mainnet/crossfi/) | [Github](https://github.com/CryptoNodeID/crossfi)
 
 ### Testnet
 
-* CrossFi Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/crossfi.webp" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide ](testnet/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
-* NuLink Worker Node - Status : 🟢Online
+* <img src=".gitbook/assets/image (2).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online
   * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
-* Shardeum (SHM) Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/shardeum.png" alt="" data-size="line">Shardeum (SHM) Validator Node - Status : 🟢Online
   * [Guide ](testnet/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
-* Side Protocol Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/sideprotocol.png" alt="" data-size="line">Side Protocol Validator Node - Status : 🟢Online
   * [Guide ](testnet/side-protocol/)| [Telegram](https://t.me/CryptoNodeID/24) | [Github](https://github.com/CryptoNodeID/side)
-* StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
+* <img src=".gitbook/assets/image (1).png" alt="" data-size="line">StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
   * [Guide ](testnet/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
 
 
