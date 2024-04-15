@@ -1,70 +1,72 @@
 # Cheat Sheet
 
-If you use our auto-installation, we've included several scripts like:
+If you use our auto-installation, we've included several scripts under `./scripts` folder like:
 
 ```sh
-
-./list_keys.sh
-./check_balance.sh
-./create_validator.sh
-./unjail_validator.sh
-./check_validator.sh
-./start_crossfi.sh
-./check_log.sh
-
+./list_keys_testnet.sh
+./check_balance_testnet.sh
+./create_validator_testnet.sh
+./unjail_validator_testnet.sh
+./check_validator_testnet.sh
+./start_crossfi_testnet.sh
+./check_log_testnet.sh
 ```
 
 Here's other useful commands you might need
 
 ## ⚙️Service operations <a href="#service-operations" id="service-operations"></a>
 
-### Check logs
-
+{% tabs %}
+{% tab title="Check logs" %}
 ```sh
 sudo journalctl -fu crossfi-testnet
 ```
+{% endtab %}
 
-### Check service status
+{% tab title="Reload daemon" %}
+```bash
+sudo systemctl daemon-reload
+```
+{% endtab %}
 
+{% tab title="Enable service" %}
+```sh
+sudo systemctl enable crossfi-testnet
+```
+{% endtab %}
+
+{% tab title="Disable service" %}
+```sh
+sudo systemctl disable crossfi-testnet
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Start service" %}
+```sh
+sudo systemctl start crossfi-testnet
+```
+{% endtab %}
+
+{% tab title="Stop service" %}
+```sh
+sudo systemctl stop crossfi-testnet
+```
+{% endtab %}
+
+{% tab title="Restart service" %}
 ```sh
 sudo systemctl status crossfi-testnet
 ```
+{% endtab %}
 
-### Reload service
-
-```
-sudo systemctl daemon-reload
-```
-
-### Enable service
-
-```
-sudo systemctl enable crossfi-testnet
-```
-
-### Disable service
-
-```
-sudo systemctl disable crossfi-testnet
-```
-
-### Start service
-
-```
-sudo systemctl start crossfi-testnet
-```
-
-### Stop service
-
-```
-sudo systemctl stop crossfi-testnet
-```
-
-### Restart service
-
-```
+{% tab title="Check service status" %}
+```sh
 sudo systemctl status crossfi-testnet
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 🖥️Node operations
 

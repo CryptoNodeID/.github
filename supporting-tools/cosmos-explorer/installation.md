@@ -19,6 +19,10 @@ npm install --global yarn
 git clone https://github.com/CryptoNodeID/explorer.git
 ```
 
+{% hint style="warning" %}
+Would be better if you fork from our repo and clone it from yours so you can modify it freely
+{% endhint %}
+
 ### Build
 
 ```sh
