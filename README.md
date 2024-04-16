@@ -37,14 +37,14 @@ You can join our Telegram Channel here :
 
 ### Mainnet
 
-* <img src=".gitbook/assets/CrossFi Chain Logo.png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/CrossFi Logo.png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide](mainnet/crossfi/) | [Github](https://github.com/CryptoNodeID/crossfi)
 * <img src=".gitbook/assets/humanode.png" alt="" data-size="line">Humanode Validator - Status : 🟢Online
   * [Guide](mainnet/humanode/) | [Telegram](https://t.me/CryptoNodeID/77)
 
 ### Testnet
 
-* <img src=".gitbook/assets/CrossFi Chain Logo (1).png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
+* <img src=".gitbook/assets/CrossFi Logo (1).png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide ](testnet/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
 * <img src=".gitbook/assets/image (2).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online
   * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
