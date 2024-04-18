@@ -1,20 +1,8 @@
 # Installation
 
-### Update system & install prerequisites. <a href="#update-system-and-install-prerequisites" id="update-system-and-install-prerequisites"></a>
+## Manual Installation <a href="#install-binary" id="install-binary"></a>
 
-Copy
-
-```
-sudo apt update
-sudo apt upgrade
-sudo apt install -y curl git jq lz4 build-essential unzip
-bash <(curl -s "https://raw.githubusercontent.com/MANTRA-Finance/public/main/go_install.sh")
-source .bash_profile
-```
-
-### Install binary. <a href="#install-binary" id="install-binary"></a>
-
-Copy
+### Install binary <a href="#install-binary" id="install-binary"></a>
 
 ```
 mkdir bin
@@ -30,15 +18,11 @@ rm -rf mantrachaind-linux-amd64.zip
 
 More information can be found in here: [https://github.com/CosmWasm/wasmvm](https://github.com/CosmWasm/wasmvm)
 
-Copy
-
 ```
 sudo wget -P /usr/lib https://github.com/CosmWasm/wasmvm/releases/download/v1.3.1/libwasmvm.x86_64.so
 ```
 
 ### Initialise node <a href="#initialise-node" id="initialise-node"></a>
-
-Copy
 
 ```
 mantrachaind init <your-moniker> --chain-id mantra-hongbai-1
@@ -51,15 +35,11 @@ mantrachaind init <your-moniker> --chain-id mantra-hongbai-1
 
 Obtain the `genesis.json` for the MANTRA Hongbai Chain (Testnet).
 
-Copy
-
 ```
 curl -Ls https://github.com/MANTRA-Finance/public/raw/main/mantrachain-hongbai/genesis.json > $HOME/.mantrachain/config/genesis.json
 ```
 
 Update the `config.toml` with the seed node and the peers for the MANTRA Hongbai Chain (Testnet).
-
-Copy
 
 ```
 CONFIG_TOML="$HOME/.mantrachain/config/config.toml"
@@ -80,8 +60,6 @@ sed -i -e "s/^filter_peers *=.*/filter_peers = \"true\"/" $CONFIG_TOML
 
 It polls the `upgrade-info.json` file that is created by the x/upgrade module at upgrade height, and then can automatically download the new binary, stop the current binary, switch from the old binary to the new one, and finally restart the node with the new binary.
 
-Copy
-
 ```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.4.0
 mkdir -p ~/.mantrachain/cosmovisor/genesis/bin
@@ -92,8 +70,6 @@ cp ~/bin/mantrachaind ~/.mantrachain/cosmovisor/genesis/bin
 ### Configure "mantrachaind" as a Service <a href="#configure-mantrachaind-as-a-service" id="configure-mantrachaind-as-a-service"></a>
 
 The `systemd` service manager allows the `mantrachaind` binary to run as a service, instead of as a command-line application. (See [https://systemd.io](https://systemd.io/) for more information.)
-
-Copy
 
 ```
 sudo tee /etc/systemd/system/mantrachaind.service > /dev/null << EOF
@@ -117,8 +93,6 @@ EOF
 ```
 
 ### Starting, stoping and restarting service <a href="#starting-stoping-and-restarting-service" id="starting-stoping-and-restarting-service"></a>
-
-Copy
 
 ```
 #reload, enable and start
