@@ -23,8 +23,8 @@ cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_vali
 
 sided tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@crossfi-testnet-peer.cryptonode.id:20656,66bdf53ec0c2ceeefd9a4c29d7f7926e136f114a@crossfi-testnet-peer.itrocket.net:36656,4b6c13b8820fd6c1bcf5e36c3097a1b64e4e3b8c@testnet-crossfi.konsortech.xyz:11656"
-SNAP_RPC="https://crossfi-testnet-rpc.cryptonode.id:443"
+PEERS="739b859cd76a5d4f05d868b7bdf3f826bf185e4c@side-testnet-peer.cryptonode.id:22656,bbbf623474e377664673bde3256fc35a36ba0df1@side-testnet-peer.itrocket.net:45656,1ace1dc4d8968f6946d0ede46e6c10b2eefb60bb@65.109.78.52:26656,996c8e0d0c331c19984c543f6a3ec8520131fb7e@95.164.3.79:34656,85cfebdb59615a1bf427106a32b30c91568fd52a@135.181.216.54:3450,351db3719747088c9a980685a7ca40e84e7211e5@65.109.107.172:26656,dc09bc2843f6097d145d79c232d2b2749f1e88ce@37.27.48.77:29656,a435b4f6bd8a3372d5a3a96cb781418c20913391@173.249.59.66:22656,cbd5e3faeead45960c3ce1388454025445f820da@65.108.73.186:26656,9c14080752bdfa33f4624f83cd155e2d3976e303@65.108.231.124:45656"
+SNAP_RPC="https://side-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
