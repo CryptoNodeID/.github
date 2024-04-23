@@ -1,32 +1,32 @@
 # Endpoints and Sync
 
-RPC: https://mantra-testnet-rpc.cryptonode.id
+RPC: https://warden-testnet-rpc.cryptonode.id
 
-API: https://mantra-testnet-api.cryptonode.id
+API: https://warden-testnet-api.cryptonode.id
 
 
 
 {% code title="Peers" %}
 ```sh
-e6300da0cd93bcea978bb17a40e8f177272fea94@mantra-testnet-peer.cryptonode.id:23656
+895efd33011b12c75d75e83382329cc510fb0464@warden-testnet-peer.cryptonode.id:24656
 ```
 {% endcode %}
 
 ## State Sync
 
 ```sh
-DAEMON_HOME="${HOME}/.mantrachain"
-SERVICE_NAME="mantrachaind"
+DAEMON_HOME="${HOME}/.warden"
+SERVICE_NAME="wardend"
 
 sudo systemctl stop ${SERVICE_NAME}
 
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/data/priv_validator_state.json.backup
 cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_validator_key.json.backup
 
-mantrachaind tendermint unsafe-reset-all --home ${DAEMON_HOME}
+wardend tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@mantra-testnet-peer.cryptonode.id:23656,1a46b1db53d1ff3dbec56ec93269f6a0d15faeb4@mantra-testnet-peer.itrocket.net:22656,f8352e2f7d9e6f71a431a77cefe9a84bcab3bbac@testnet-mantra-konsortech.xyz:32656,d2d67040b3bdbe7378210a51edf6a17fce405243@23.88.5.169:32656"
-SNAP_RPC="https://mantra-testnet-rpc.cryptonode.id:443"
+PEERS="895efd33011b12c75d75e83382329cc510fb0464@warden-testnet-peer.cryptonode.id:24656,ddb4d92ab6eba8363bab2f3a0d7fa7a970ae437f@sentry-1.buenavista.wardenprotocol.org:26656,c717995fd56dcf0056ed835e489788af4ffd8fe8@sentry-2.buenavista.wardenprotocol.org:26656,e1c61de5d437f35a715ac94b88ec62c482edc166@sentry-3.buenavista.wardenprotocol.org:26656,b14f35c07c1b2e58c4a1c1727c89a5933739eeea@warden-testnet-peer.itrocket.net:18656,00c0b45d650def885fcbcc0f86ca515eceede537@testnet-warden.konsortech.xyz:15656,61446070887838944c455cb713a7770b41f35ac5@37.60.249.101:26656,0be8cf6de2a01a6dc7adb29a801722fe4d061455@65.109.115.100:27060,8288657cb2ba075f600911685670517d18f54f3b@65.108.231.124:18656,dc0122e37c203dec43306430a1f1879650653479@37.27.97.16:26656,6fb5cf2179ca9dd98ababd1c8d29878b2021c5c3@146.19.24.175:26856"
+SNAP_RPC="https://warden-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
@@ -51,9 +51,9 @@ sudo journalctl -fu ${SERVICE_NAME} --no-hostname -o cat
 ## Snapshot Restore
 
 ```sh
-DAEMON_HOME=$HOME/.mantrachain
-SERVICE_NAME=mantrachaind
-NETWORK=mantra-testnet
+DAEMON_HOME=$HOME/.warden
+SERVICE_NAME=wardend
+NETWORK=warden-testnet
 
 sudo systemctl stop ${SERVICE_NAME}
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/priv_validator_state.json.backup
