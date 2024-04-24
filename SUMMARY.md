@@ -31,6 +31,7 @@
   * [Shardeum](testnet/shardeum.md)
   * [Side Protocol](testnet/side-protocol/README.md)
     * [Endpoints and Sync](testnet/side-protocol/endpoints-and-sync.md)
+    * [Installation](testnet/side-protocol/installation.md)
   * [Stratis EVM](testnet/stratis-evm.md)
   * [Warden Protocol](testnet/warden-protocol/README.md)
     * [Endpoints and Sync](testnet/warden-protocol/endpoints-and-sync.md)
