@@ -14,29 +14,7 @@ You can join our Telegram Channel here :
 * Comment Group : [https://t.me/CryptoNodeIDGroup](https://t.me/CryptoNodeIDGroup)
 * Focus Discussion Group : [https://t.me/CryptoNodeIDLearn](https://t.me/CryptoNodeIDLearn)
 
-## List of Our Works
-
-### Mainnet
-
-* Humanode Validator - Status : 🟢Online
-  * [Guide](mainnet/humanode/) | [Telegram](https://t.me/CryptoNodeID/77)
-* CrossFi Validator Node - Status : 🟢Online
-  * [Guide](mainnet/crossfi/) | [Github](https://github.com/CryptoNodeID/crossfi)
-
-### Testnet
-
-* CrossFi Validator Node - Status : 🟢Online
-  * [Guide ](testnet/crossfi/)| [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi)
-* NuLink Worker Node - Status : 🟢Online
-  * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
-* Shardeum (SHM) Validator Node - Status : 🟢Online
-  * [Guide ](testnet/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
-* Side Protocol Validator Node - Status : 🟢Online
-  * [Guide ](testnet/side-protocol/)| [Telegram](https://t.me/CryptoNodeID/24) | [Github](https://github.com/CryptoNodeID/side)
-* StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
-  * [Guide ](testnet/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
-
-
+## More Details: [https://docs.cryptonode.id](https://docs.cryptonode.id)
 
 #### If you have any questions, please feel free to contact us 😁
 
