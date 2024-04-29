@@ -12,4 +12,4 @@
 
 You can visit our repository and follow the instruction there
 
-[https://github.com/CryptoNodeID/crossfi](https://github.com/CryptoNodeID/crossfi)
+[https://github.com/CryptoNodeID/side](https://github.com/CryptoNodeID/side)
