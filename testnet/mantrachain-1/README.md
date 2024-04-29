@@ -23,6 +23,6 @@ layout:
 | ----------------- | ------------------ |
 | galactica\_9302-1 | v0.1.2             |
 
-<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: https://testnet.cryptonode.id/galactica\
-<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: https://testnet.cryptonode.id/galactica/staking/\
+<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/galactica](https://testnet.cryptonode.id/galactica)\
+<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [https://testnet.cryptonode.id/galactica/staking/](https://testnet.cryptonode.id/galactica/staking/galavaloper1dtnwm55x8mhjjxghcnrz45082dw98q87zufd4t)\
 <img src="https://web.telegram.org/a/img-apple-64/1f6a8.png" alt="🚨" data-size="line">Monitoring: [https://monitor.cryptonode.id](https://monitor.cryptonode.id)
