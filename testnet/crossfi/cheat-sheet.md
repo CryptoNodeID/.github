@@ -70,41 +70,53 @@ sudo systemctl status crossfi-testnet
 
 ## 🖥️Node operations
 
-### Node info
+{% tabs %}
+{% tab title="Overall status" %}
+```
+crossfid status | jq
+```
+{% endtab %}
 
+{% tab title="Node info" %}
 ```
 crossfid status 2>&1 | jq .NodeInfo
 ```
+{% endtab %}
 
-### Sync info
-
+{% tab title="Sync info" %}
 ```
 crossfid status 2>&1 | jq .SyncInfo
 ```
+{% endtab %}
+{% endtabs %}
 
-### Add new wallet
+## 🗝️Key Management
 
+{% tabs %}
+{% tab title="Add new wallet" %}
 ```
 crossfid keys add $WALLET
 ```
+{% endtab %}
 
-### Restore wallet
-
+{% tab title="Restore wallet" %}
 ```
 crossfid keys add $WALLET --recover
 ```
+{% endtab %}
 
-### List all wallets
-
+{% tab title="List all wallet" %}
 ```
 crossfid keys list
 ```
+{% endtab %}
 
-### Check balance
-
+{% tab title="Check balance" %}
 ```
 crossfid q bank balances $(crossfid keys show $WALLET -a)
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 💱Transaction operations
 
@@ -112,7 +124,7 @@ Withdraw all rewards
 
 {% code overflow="wrap" %}
 ```
-crossfid tx distribution withdraw-all-rewards --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx
+crossfid tx distribution withdraw-all-rewards --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx
 ```
 {% endcode %}
 
@@ -120,7 +132,7 @@ Self delegate
 
 {% code overflow="wrap" %}
 ```
-crossfid tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
+crossfid tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
 ```
 {% endcode %}
 
@@ -128,7 +140,7 @@ Unbond
 
 {% code overflow="wrap" %}
 ```
-crossfid tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
+crossfid tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
 ```
 {% endcode %}
 
@@ -136,7 +148,7 @@ Transfer token
 
 {% code overflow="wrap" %}
 ```
-crossfid tx bank send $WALLET_ADDRESS <TO_WALLET_ADDRESS> 1000000mpx --gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx -y
+crossfid tx bank send $WALLET_ADDRESS <TO_WALLET_ADDRESS> 1000000mpx --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
 ```
 {% endcode %}
 

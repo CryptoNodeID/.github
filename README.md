@@ -35,6 +35,8 @@ You can join our Telegram Channel here :
 
 ## List of Our Works
 
+You can monitor our cosmos node status here: [https://monitor.cryptonode.id](https://monitor.cryptonode.id)
+
 ### Mainnet
 
 * <img src=".gitbook/assets/CrossFi Logo.png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
@@ -46,6 +48,8 @@ You can join our Telegram Channel here :
 
 * <img src=".gitbook/assets/CrossFi Logo (1).png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide](testnet/crossfi/) | [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi) | [Stake to our node](https://testnet.cryptonode.id/crossfi/staking/mxvaloper17rcy08cjnwsagglylmclfx85j8ss9lepvd4jdu)
+* <img src=".gitbook/assets/galactica.png" alt="" data-size="line">Galactica Validator Node - Status : 🟢Online
+  * [Guide](testnet/galactica/) | [Telegram](https://t.me/CryptoNodeID/144) | [Github](https://github.com/CryptoNodeID/galactica) | [Stake to our node](https://testnet.cryptonode.id/galactica/staking/galavaloper1dtnwm55x8mhjjxghcnrz45082dw98q87zufd4t)
 * <img src=".gitbook/assets/mantra (2).png" alt="" data-size="line">Mantrachain Validator Node - Status : 🟢Online
   * [Guide](testnet/mantrachain/) | [Telegram](https://t.me/CryptoNodeID/121) | [Github](https://github.com/CryptoNodeID/mantrachain) | [Stake to our node](https://testnet.cryptonode.id/mantrachain/staking/mantravaloper1r4u3pr2c4vcjwehvw6u56t98zducjsy7qzy0z7)
 * <img src=".gitbook/assets/image (2).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online

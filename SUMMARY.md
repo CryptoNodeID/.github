@@ -10,6 +10,7 @@
   * [Humanode](mainnet/humanode/README.md)
     * [Installation](mainnet/humanode/installation.md)
     * [Node Activation](mainnet/humanode/node-activation.md)
+    * [Monitoring](mainnet/humanode/monitoring.md)
   * [CrossFi](mainnet/crossfi/README.md)
     * [Endpoints and Sync](mainnet/crossfi/endpoints-and-sync.md)
     * [Installation](mainnet/crossfi/installation.md)
