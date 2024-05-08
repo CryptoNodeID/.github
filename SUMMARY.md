@@ -19,6 +19,7 @@
 * [Testnet](testnet/README.md)
   * [0G Evmos](testnet/0g-evmos/README.md)
     * [Endpoints and Sync](testnet/0g-evmos/endpoints-and-sync.md)
+    * [Installation](testnet/0g-evmos/installation.md)
   * [CrossFi](testnet/crossfi/README.md)
     * [Endpoints and Sync](testnet/crossfi/endpoints-and-sync.md)
     * [Installation](testnet/crossfi/installation.md)

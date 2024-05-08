@@ -13,6 +13,8 @@
 You can follow instruction in this video to install your Humanode Validator node
 
 {% embed url="https://youtu.be/AAkVG_g73-g" %}
+Source: [https://www.youtube.com/watch?v=AAkVG\_g73-g](https://www.youtube.com/watch?v=AAkVG\_g73-g)
+{% endembed %}
 
 ### Special instruction for Ubuntu 22.04 user
 
