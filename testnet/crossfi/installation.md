@@ -50,6 +50,7 @@ Please refer to [server-preparation.md](../../basics/server-preparation.md "ment
 ### Prepare installation
 
 ```sh
+mkdir -p ${INSTALLATION_DIR}/bin
 mkdir -p ${DAEMON_HOME}/cosmovisor/genesis/bin
 mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 ```
