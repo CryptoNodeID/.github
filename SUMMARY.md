@@ -41,6 +41,7 @@
   * [Warden Protocol](testnet/warden-protocol/README.md)
     * [Endpoints and Sync](testnet/warden-protocol/endpoints-and-sync.md)
     * [Installation](testnet/warden-protocol/installation.md)
+    * [Validator Setup](testnet/warden-protocol/validator-setup.md)
 * [Supporting Tools](supporting-tools/README.md)
   * [Cosmos Explorer](supporting-tools/cosmos-explorer/README.md)
     * [Installation](supporting-tools/cosmos-explorer/installation.md)

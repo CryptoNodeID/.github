@@ -1,8 +1,8 @@
 # Endpoints and Sync
 
-RPC: https://warden-testnet-rpc.cryptonode.id
+RPC: [https://warden-testnet-rpc.cryptonode.id](https://warden-testnet-rpc.cryptonode.id)
 
-API: https://warden-testnet-api.cryptonode.id
+API: [https://warden-testnet-api.cryptonode.id](https://warden-testnet-api.cryptonode.id)
 
 
 
