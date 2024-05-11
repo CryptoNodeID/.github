@@ -3,8 +3,8 @@
 ## 🖥️System Requirements
 
 \- OS: Linux\
-\- CPU: 8 Core(s)\
-\- Memory: 32GB\
+\- CPU: 4 Core(s)\
+\- Memory: 8GB\
 \- Storage: 300GB
 
 ## 🛠️Manual Installation <a href="#install-binary" id="install-binary"></a>
@@ -16,9 +16,9 @@ If you use other OS, please modify the commands accordingly
 
 ```sh
 export INSTALLATION_DIR=${HOME}/appl
-export DAEMON_NAME=wardend
-export DAEMON_HOME=${HOME}/.warden
-export SERVICE_NAME=wardend-testnet
+export DAEMON_NAME=junctiond
+export DAEMON_HOME=${HOME}/.junction
+export SERVICE_NAME=junctiond-testnet
 export MONIKER="YOUR_NODE_NAME_HERE"
 export WALLET="YOUR_WALLET_NAME_HERE"
 ```
@@ -57,15 +57,13 @@ mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 
 ### Install and Setup Warden Daemon
 
-{% code overflow="wrap" %}
-```sh
-cd ${INSTALLATION_DIR}
+<pre class="language-sh" data-overflow="wrap"><code class="lang-sh">cd ${INSTALLATION_DIR}
 
-#Download Warden Daemon and basic setup
-wget https://github.com/warden-protocol/wardenprotocol/releases/download/v0.3.0/wardend_Linux_x86_64.zip
-unzip wardend_Linux_x86_64.zip
-mv ${DAEMON_NAME} ${INSTALLATION_DIR}/bin
-
+#Download Junction Daemon and basic setup
+wget https://github.com/airchains-network/junction/releases/download/v0.1.0/junctiond
+chmod +x ${DAEMON_NAME}
+<strong>mv ${DAEMON_NAME} ${INSTALLATION_DIR}/bin
+</strong>
 #Download and install cosmovisor
 wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.5.0/cosmovisor-v1.5.0-linux-amd64.tar.gz
 tar -xvzf cosmovisor-v1.5.0-linux-amd64.tar.gz
@@ -76,25 +74,24 @@ cp ${INSTALLATION_DIR}/bin/${DAEMON_NAME} ${DAEMON_HOME}/cosmovisor/genesis/bin
 sudo ln -s ${INSTALLATION_DIR}/bin/cosmovisor /usr/local/bin/cosmovisor -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/genesis ${DAEMON_HOME}/cosmovisor/current -f
 sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/${DAEMON_NAME} -f
-```
-{% endcode %}
+</code></pre>
 
 #### Check wardend version
 
 ```sh
-wardend --home ${DAEMON_HOME} version
+junctiond --home ${DAEMON_HOME} version
 ```
 
 ### Create or Restore Wallet
 
 ```sh
 #If you want to create new wallet
-wardend --home ${DAEMON_HOME} keys add ${WALLET}
+junctiond --home ${DAEMON_HOME} keys add ${WALLET}
 ```
 
 ```sh
 #If you already have wallet and want to use same phrase
-wardend --home ${DAEMON_HOME} keys add ${WALLET} --recover
+junctiond --home ${DAEMON_HOME} keys add ${WALLET} --recover
 ```
 
 {% hint style="info" %}
@@ -104,7 +101,7 @@ You will be prompted to "Enter your bip39 mnemonic", paste your phrase and press
 #### Check your wallet
 
 ```sh
-wardend --home ${DAEMON_HOME} keys list
+junctiond --home ${DAEMON_HOME} keys list
 ```
 
 ### Setup pruning config
@@ -126,9 +123,9 @@ You can change the number for each parameter as you want
 ### Setting up Cosmovisor
 
 ```bash
-sudo tee /etc/systemd/system/wardend-testnet.service > /dev/null <<EOF  
+sudo tee /etc/systemd/system/junctiond-testnet.service > /dev/null <<EOF  
 [Unit]
-Description=Warden Testnet Daemon (cosmovisor)
+Description=Airchain Testnet Daemon (cosmovisor)
 After=network-online.target
 
 [Service]
@@ -152,21 +149,20 @@ EOF
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable wardend-testnet.service
-sudo systemctl start wardend-testnet.service
+sudo systemctl enable junctiond-testnet.service
+sudo systemctl start junctiond-testnet.service
 ```
 
 #### Check service log
 
 ```bash
-sudo journalctl -xfu wardend-testnet
+sudo journalctl -xfu junctiond-testnet
 ```
 
 ### Cleanup
 
 ```bash
 rm -f cosmovisor-v1.5.0-linux-amd64.tar.gz
-rm -f wardend_Linux_x86_64.zip
 rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 ```
 
@@ -174,4 +170,4 @@ rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 
 You can visit our repository and follow the instruction there
 
-[https://github.com/CryptoNodeID/warden](https://github.com/CryptoNodeID/warden)
+[https://github.com/CryptoNodeID/airchain](https://github.com/CryptoNodeID/airchain)
