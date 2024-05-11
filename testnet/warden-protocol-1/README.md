@@ -23,6 +23,6 @@ layout:
 | -------- | ------------------ |
 | junction | v0.1.0             |
 
-<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: https://testnet.cryptonode.id/airchain\
-<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: https://testnet.cryptonode.id/airchain/staking/\
-<img src="https://web.telegram.org/a/img-apple-64/1f6a8.png" alt="🚨" data-size="line">Monitoring: https://monitor.cryptonode.id
+<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/airchain](https://testnet.cryptonode.id/airchain)\
+<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [CryptoNodeID](https://testnet.cryptonode.id/airchain/staking/airvaloper1dyh6jg3xg3uhaypk2qwnsetmvtgd07apgjqxjh)\
+<img src="https://web.telegram.org/a/img-apple-64/1f6a8.png" alt="🚨" data-size="line">Monitoring: [https://monitor.cryptonode.id](https://monitor.cryptonode.id)
