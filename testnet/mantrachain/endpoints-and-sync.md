@@ -30,7 +30,7 @@ SNAP_RPC="https://mantra-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
-BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000));
+BLOCK_HEIGHT=$((LATEST_HEIGHT - 5000));
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash) 
 
 sed -i \
