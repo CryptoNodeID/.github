@@ -50,6 +50,12 @@ sudo systemctl restart ${SERVICE_NAME}
 sudo journalctl -fu ${SERVICE_NAME} --no-hostname -o cat
 ```
 
+{% hint style="danger" %}
+ONLY USE 1 of the SYNC method ‼️ if you already run [#state-sync](endpoints-and-sync.md#state-sync "mention"), wait for it and check the log, don't run [#snapshot-restore](endpoints-and-sync.md#snapshot-restore "mention").
+
+If you choose to use [#snapshot-restore](endpoints-and-sync.md#snapshot-restore "mention"), you don't need to execute [#state-sync](endpoints-and-sync.md#state-sync "mention")
+{% endhint %}
+
 ## Snapshot Restore
 
 ```sh
