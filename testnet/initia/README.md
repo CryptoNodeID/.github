@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/image.png
+cover: ../../.gitbook/assets/image (1).png
 coverY: -21.957333333333334
 layout:
   cover:
@@ -23,6 +23,6 @@ layout:
 | ------------ | ------------------ |
 | initiation-1 | v0.2.11            |
 
-<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/initia](https://testnet.cryptonode.id/initia)\
-<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: Waiting for Faucet\
+<img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://scan.testnet.initia.xyz/initiation-1/](https://scan.testnet.initia.xyz/initiation-1/)\
+<img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [CryptoNodeID](https://scan.testnet.initia.xyz/initiation-1/validators/initvaloper1unsxpj424zdp97hps29wdwhu9uhl4ec5kwm5wm)\
 <img src="https://web.telegram.org/a/img-apple-64/1f6a8.png" alt="🚨" data-size="line">Monitoring: [https://monitor.cryptonode.id](https://monitor.cryptonode.id)

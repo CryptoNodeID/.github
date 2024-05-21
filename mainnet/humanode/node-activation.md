@@ -13,7 +13,7 @@ Once  you've done the installation, your launcher will show QR like below (QR ce
 
 Scan it using your phone and it will direct you to a dashboard like below
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
 
 ## Setup Node
 
