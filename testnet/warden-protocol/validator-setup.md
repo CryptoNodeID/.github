@@ -107,10 +107,10 @@ EOF
 You can create your validator by using command below :
 
 ```bash
-wardend tx staking create-validator validator.json \
-    --from=${WALLET}  \
-    --chain-id=buenavista-1 \
-    --fees=500uward
+wardend tx staking create-validator ./validator.json \
+--from=${WALLET} \
+--chain-id=buenavista-1 \
+--fees=500uward
 ```
 
 {% hint style="info" %}
@@ -123,9 +123,9 @@ When a validator is "jailed" for downtime, you must submit an `Unjail` transacti
 
 ```bash
 wardend tx slashing unjail \
- --from=${WALLET} \
- --chain-id="buenavista-1" \
- --fees=500uward
+--from=${WALLET} \
+--chain-id="buenavista-1" \
+--fees=500uward
 ```
 
 ### Halting Your Validator
