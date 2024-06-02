@@ -170,7 +170,7 @@ crossfid tx staking create-validator \
 --identity "put your keybase pgp here" \
 --details "anything you want to say here" \
 --chain-id crossfi-evm-testnet-1 \
---gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx \
+--gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
 -y
 ```
 {% endcode %}
@@ -190,7 +190,7 @@ crossfid tx staking edit-validator \
 --details "anything you want to say here" \
 --from $WALLET \
 --chain-id crossfi-evm-testnet-1 \
---gas auto --gas-adjustment 1.5 --gas-prices 5000000000000mpx \
+--gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
 -y
 ```
 {% endcode %}
@@ -198,3 +198,12 @@ crossfid tx staking edit-validator \
 {% hint style="info" %}
 You can leave any field blank if you don't want to change it
 {% endhint %}
+
+Unjail Validator
+
+```bash
+crossfid tx slashing unjail \
+--from $WALLET \
+--chain-id crossfi-evm-testnet-1 \
+--gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y 
+```
