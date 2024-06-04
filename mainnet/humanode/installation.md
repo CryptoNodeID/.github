@@ -23,7 +23,8 @@ Source: [https://www.youtube.com/watch?v=AAkVG\_g73-g](https://www.youtube.com/w
 When you encounter error while generating address, you can execute this command in your host server and continue with the installation
 
 ```sh
-mkdir $HOME/opt && cd $HOME/opt
+mkdir $HOME/opt
+cd $HOME/opt
 wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
 tar -zxvf openssl-1.1.1o.tar.gz
 cd openssl-1.1.1o
