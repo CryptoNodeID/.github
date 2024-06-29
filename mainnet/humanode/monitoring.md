@@ -23,24 +23,25 @@ Copy and save this script below with .sh format in your **Humanode server**&#x20
 ```shell
 #!/bin/bash
 telegram_token='<YOUR_API_KEY>'
-telegram_group='-1002002087722_1'
-telegram_user_tag="@CryptoNodeRedd"
+telegram_group='<YOUR_TELEGRAM_GROUP>'
+telegram_user_tag="@<YOUR_TELEGRAM_USERNAME>"
 # Stop editing
 # Script starts here
+server_ip=$(curl -s https://api.ipify.org)
 telegram_bot="https://api.telegram.org/bot${telegram_token}/sendMessage"
 status=$(curl -s http://127.0.0.1:9933 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"bioauth_status","params":[],"id":1}' | jq '.result')
 
 if [ "$(echo "$status" | tr '[:upper:]' '[:lower:]')" == "$(echo '"inactive"' | tr '[:upper:]' '[:lower:]')" ]; then
-  message="🚨Your Humanode is not active, please proceed to do re-authentication ${telegram_user_tag}"
+  message="🚨Your Humanode (${server_ip}) is not active, please proceed to do re-authentication ${telegram_user_tag}"
   else
   current_timestamp=$(date +%s)
   expires_at=$(curl -s http://127.0.0.1:9933 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"bioauth_status","params":[],"id":1}' | jq '.result.Active.expires_at')
   difference=$(( (expires_at / 1000 - current_timestamp) / 60 ))
 
   if (( difference > 25 && difference < 31 )); then
-    message="🟡Your Humanode will be deactivated in 30 minutes, please prepare for re-authentication ${telegram_user_tag}"
+    message="🟡Your Humanode (${server_ip}) will be deactivated in 30 minutes, please prepare for re-authentication ${telegram_user_tag}"
   elif (( difference > 0 && difference < 6 )); then
-    message="🔴Your Humanode will be deactivated in 5 minutes, please prepare for re-authentication ${telegram_user_tag}"
+    message="🔴Your Humanode (${server_ip}) will be deactivated in 5 minutes, please prepare for re-authentication ${telegram_user_tag}"
   else
     message="NULL"
   fi
@@ -56,7 +57,7 @@ Replace `<YOUR_API_KEY>` with the key you get from previous step
 {% endhint %}
 
 {% hint style="warning" %}
-For `telegram_group` you can change it to your own chat/group, if you wish to use that same token, you can invite your bot to my group [https://t.me/CNID\_Mon](https://t.me/CNID\_Mon)
+For `telegram_group` you can change it to your own chat/group.
 {% endhint %}
 
 {% hint style="danger" %}
