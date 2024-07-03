@@ -124,7 +124,7 @@ Withdraw all rewards
 
 {% code overflow="wrap" %}
 ```
-wardend tx distribution withdraw-all-rewards --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx
+wardend tx distribution withdraw-all-rewards --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
@@ -132,7 +132,7 @@ Self delegate
 
 {% code overflow="wrap" %}
 ```
-wardend tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
+wardend tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
@@ -140,7 +140,7 @@ Unbond
 
 {% code overflow="wrap" %}
 ```
-wardend tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id crossfi-evm-testnet-1 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
+wardend tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000mpx --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
@@ -148,7 +148,7 @@ Transfer token
 
 {% code overflow="wrap" %}
 ```
-wardend tx bank send $WALLET_ADDRESS <TO_WALLET_ADDRESS> 1000000mpx --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx -y
+wardend tx bank send $WALLET <TO_WALLET_ADDRESS> 1000000mpx --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
@@ -164,9 +164,8 @@ Can follow this guide to get your keybase pgp : [https://docs.harmony.one/home/n
 
 Unjail Validator
 
-```bash
-wardend tx slashing unjail \
+<pre class="language-bash"><code class="lang-bash">wardend tx slashing unjail \
 --from $WALLET \
 --chain-id buenavista-1 \
---fees=500uward -y 
-```
+<strong>--fees=500uward -y 
+</strong></code></pre>

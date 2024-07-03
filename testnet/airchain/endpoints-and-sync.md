@@ -8,7 +8,7 @@ API: [https://airchain-testnet-api.cryptonode.id](https://airchain-testnet-api.c
 
 {% code title="Peers" %}
 ```sh
-df2a56a208821492bd3d04dd2e91672657c79325@airchain-testnet-peer.cryptonode.id:27656
+7334485385463f3d215bf733f3d743e27ff9111f@airchain-testnet-sentry1.cnd.biz.id:27656,df2a56a208821492bd3d04dd2e91672657c79325@airchain-testnet-peer.cryptonode.id:27656
 ```
 {% endcode %}
 
@@ -25,7 +25,7 @@ cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/config/priv_vali
 
 junctiond tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="df2a56a208821492bd3d04dd2e91672657c79325@airchain-testnet-peer.cryptonode.id:27656,aeaf101d54d47f6c99b4755983b64e8504f6132d@airchain-testnet-peer.dashnode.org:28656,47f61921b54a652ca5241e2a7fc4ed8663091e89@airchains-testnet-peer.itrocket.net:19656,04e2fdd6ec8f23729f24245171eaceae5219aa91@airchains-testnet-seed.itrocket.net:19656,2d1ea4833843cc1433e3c44e69e297f357d2d8bd@5.78.118.106:26656"
+PEERS="7334485385463f3d215bf733f3d743e27ff9111f@airchain-testnet-sentry1.cnd.biz.id:27656,df2a56a208821492bd3d04dd2e91672657c79325@airchain-testnet-peer.cryptonode.id:27656,aeaf101d54d47f6c99b4755983b64e8504f6132d@airchain-testnet-peer.dashnode.org:28656,47f61921b54a652ca5241e2a7fc4ed8663091e89@airchains-testnet-peer.itrocket.net:19656,04e2fdd6ec8f23729f24245171eaceae5219aa91@airchains-testnet-seed.itrocket.net:19656,2d1ea4833843cc1433e3c44e69e297f357d2d8bd@5.78.118.106:26656"
 SNAP_RPC="https://airchain-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
