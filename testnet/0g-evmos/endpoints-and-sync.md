@@ -1,2 +1,0 @@
-# Endpoints and Sync
-
