@@ -132,7 +132,7 @@ Self delegate
 
 {% code overflow="wrap" %}
 ```
-wardend tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
+wardend tx staking delegate $(wardend keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
@@ -140,7 +140,7 @@ Unbond
 
 {% code overflow="wrap" %}
 ```
-wardend tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
+wardend tx staking unbond $(wardend keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
 ```
 {% endcode %}
 
