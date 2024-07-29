@@ -19,7 +19,7 @@ Here's other useful commands you might need
 {% tabs %}
 {% tab title="Check logs" %}
 ```sh
-sudo journalctl -fu wardend
+sudo journalctl -fu emped
 ```
 {% endtab %}
 
@@ -31,13 +31,13 @@ sudo systemctl daemon-reload
 
 {% tab title="Enable service" %}
 ```sh
-sudo systemctl enable wardend
+sudo systemctl enable emped
 ```
 {% endtab %}
 
 {% tab title="Disable service" %}
 ```sh
-sudo systemctl disable wardend
+sudo systemctl disable emped
 ```
 {% endtab %}
 {% endtabs %}
@@ -45,25 +45,25 @@ sudo systemctl disable wardend
 {% tabs %}
 {% tab title="Start service" %}
 ```sh
-sudo systemctl start wardend
+sudo systemctl start emped
 ```
 {% endtab %}
 
 {% tab title="Stop service" %}
 ```sh
-sudo systemctl stop wardend
+sudo systemctl stop emped
 ```
 {% endtab %}
 
 {% tab title="Restart service" %}
 ```sh
-sudo systemctl status wardend
+sudo systemctl status emped
 ```
 {% endtab %}
 
 {% tab title="Check service status" %}
 ```sh
-sudo systemctl status wardend
+sudo systemctl status emped
 ```
 {% endtab %}
 {% endtabs %}
@@ -73,19 +73,19 @@ sudo systemctl status wardend
 {% tabs %}
 {% tab title="Overall status" %}
 ```
-wardend status | jq
+emped status | jq
 ```
 {% endtab %}
 
 {% tab title="Node info" %}
 ```
-wardend status 2>&1 | jq .NodeInfo
+emped status 2>&1 | jq .NodeInfo
 ```
 {% endtab %}
 
 {% tab title="Sync info" %}
 ```
-wardend status 2>&1 | jq .SyncInfo
+emped status 2>&1 | jq .SyncInfo
 ```
 {% endtab %}
 {% endtabs %}
@@ -95,25 +95,25 @@ wardend status 2>&1 | jq .SyncInfo
 {% tabs %}
 {% tab title="Add new wallet" %}
 ```
-wardend keys add $WALLET
+emped keys add $WALLET
 ```
 {% endtab %}
 
 {% tab title="Restore wallet" %}
 ```
-wardend keys add $WALLET --recover
+emped keys add $WALLET --recover
 ```
 {% endtab %}
 
 {% tab title="List all wallet" %}
 ```
-wardend keys list
+emped keys list
 ```
 {% endtab %}
 
 {% tab title="Check balance" %}
 ```
-wardend q bank balances $(wardend keys show $WALLET -a)
+emped q bank balances $(emped keys show $WALLET -a)
 ```
 {% endtab %}
 {% endtabs %}
@@ -123,32 +123,72 @@ wardend q bank balances $(wardend keys show $WALLET -a)
 Withdraw all rewards
 
 {% code overflow="wrap" %}
-```
-wardend tx distribution withdraw-all-rewards --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
+```sh
+emped tx distribution withdraw-all-rewards \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
 ```
 {% endcode %}
+
+Withdraw rewards and commission from your validator
+
+```sh
+emped tx distribution withdraw-rewards $(emped keys show $WALLET --bech val -a) \
+--from $WALLET \
+--commission \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
+```
 
 Self delegate
 
 {% code overflow="wrap" %}
-```
-wardend tx staking delegate $(crossfid keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
+```sh
+emped tx staking delegate $(emped keys show $WALLET --bech val -a) 1000000uempe \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
 ```
 {% endcode %}
+
+Redelegate
+
+```sh
+emped tx staking redelegate <FROM_VALOPER_ADDRESS> <TO_VALOPER_ADDRESS> 1000000uempe \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
+```
 
 Unbond
 
 {% code overflow="wrap" %}
-```
-wardend tx staking unbond $(crossfid keys show $WALLET --bech val -a) 1000000uward --from $WALLET --chain-id buenavista-1 --gas auto --gas-adjustment 1.5 --fees 500uward -y
+```sh
+emped tx staking unbond $(emped keys show $WALLET --bech val -a) 1000000uempe \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto --gas-adjustment 1.5 \
+--fees 20uempe -y
 ```
 {% endcode %}
 
 Transfer token
 
 {% code overflow="wrap" %}
-```
-wardend tx bank send $WALLET <TO_WALLET_ADDRESS> 1000000uward --gas auto --gas-adjustment 1.5 --fees 500uward -y
+```sh
+emped tx bank send $WALLET <TO_WALLET_ADDRESS> 1000000uempe \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees 20uempe -y
 ```
 {% endcode %}
 
@@ -156,7 +196,7 @@ wardend tx bank send $WALLET <TO_WALLET_ADDRESS> 1000000uward --gas auto --gas-a
 
 Create validator
 
-Check [validator-setup.md](validator-setup.md "mention")
+Check [validator-setup.md](../warden-protocol/validator-setup.md "mention")
 
 {% hint style="info" %}
 Can follow this guide to get your keybase pgp : [https://docs.harmony.one/home/network/validators/managing-a-validator/adding-a-validator-logo](https://docs.harmony.one/home/network/validators/managing-a-validator/adding-a-validator-logo)
@@ -165,8 +205,31 @@ Can follow this guide to get your keybase pgp : [https://docs.harmony.one/home/n
 Unjail Validator
 
 ```bash
-wardend tx slashing unjail \
+emped tx slashing unjail \
 --from $WALLET \
---chain-id buenavista-1 \
---fees=500uward -y 
+--chain-id empe-testnet-2 \
+--fees=20uempe -y
 ```
+
+## 🏛️Governance
+
+Query Proposal List
+
+```sh
+emped query gov proposals
+```
+
+Vote
+
+```sh
+emped tx gov vote 1 yes \
+--from $WALLET \
+--chain-id empe-testnet-2 \
+--gas auto \
+--gas-adjustment 1.5 \
+--fees=20uempe -y
+```
+
+{% hint style="warning" %}
+vote value can be `yes`, `no`, `no_with_veto` and `abstain`
+{% endhint %}
