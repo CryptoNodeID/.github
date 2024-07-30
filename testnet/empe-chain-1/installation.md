@@ -15,10 +15,10 @@ If you use other OS, please modify the commands accordingly
 ### Set environment
 
 ```sh
-export INSTALLATION_DIR=${HOME}/empe-chain
-export DAEMON_NAME=emped
-export DAEMON_HOME=${HOME}/.empe-chain
-export SERVICE_NAME=emped
+export INSTALLATION_DIR=${HOME}/symphony
+export DAEMON_NAME=symphonyd
+export DAEMON_HOME=${HOME}/.symphonyd
+export SERVICE_NAME=symphonyd
 export MONIKER="YOUR_NODE_NAME_HERE"
 export WALLET="YOUR_WALLET_NAME_HERE"
 ```
@@ -56,15 +56,27 @@ mkdir -p ${DAEMON_HOME}/cosmovisor/genesis/bin
 mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 ```
 
-### Install and Setup Empeiria Daemon
+### Install Go
+
+```sh
+wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
+sudo rm -rf $(which go)
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
+rm go1.22.0.linux-amd64.tar.gz
+```
+
+### Install and Setup Symphony Daemon
 
 {% code overflow="wrap" %}
 ```sh
 cd ${INSTALLATION_DIR}
 
-#Download Empe Daemon and basic setup
-wget -qO - https://github.com/empe-io/empe-chain-releases/raw/master/v0.1.0/emped_linux_amd64.tar.gz | tar -xzf -
-mv ${DAEMON_NAME} ${INSTALLATION_DIR}/bin
+#Clone Symphony Repo and build binary
+git clone https://github.com/Orchestra-Labs/symphony
+cd symphony
+git checkout v0.2.1
+make build
+mv build/${DAEMON_NAME} ${DAEMON_NAME}
 
 #Download and install cosmovisor
 wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.5.0/cosmovisor-v1.5.0-linux-amd64.tar.gz
@@ -82,25 +94,25 @@ sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/$
 #### Check emped version
 
 ```sh
-emped --home ${DAEMON_HOME} version
+symphonyd --home ${DAEMON_HOME} version
 ```
 
 ### Download genesis.json
 
 ```sh
-wget https://snapshot.cryptonode.id/empe-testnet/genesis.json -O ${DAEMON_HOME}/config/genesis.json
+wget https://snapshot.cryptonode.id/symphony-testnet/genesis.json -O ${DAEMON_HOME}/config/genesis.json
 ```
 
 ### Create or Restore Wallet
 
 ```sh
 #If you want to create new wallet
-emped --home ${DAEMON_HOME} keys add ${WALLET}
+symphonyd --home ${DAEMON_HOME} keys add ${WALLET}
 ```
 
 ```sh
 #If you already have wallet and want to use same phrase
-emped --home ${DAEMON_HOME} keys add ${WALLET} --recover
+symphonyd --home ${DAEMON_HOME} keys add ${WALLET} --recover
 ```
 
 {% hint style="info" %}
@@ -110,7 +122,7 @@ You will be prompted to "Enter your bip39 mnemonic", paste your phrase and press
 #### Check your wallet
 
 ```sh
-emped --home ${DAEMON_HOME} keys list
+symphonyd --home ${DAEMON_HOME} keys list
 ```
 
 ### Setup pruning config
@@ -132,15 +144,15 @@ You can change the number for each parameter as you want
 ### Setting minimum gas fee
 
 ```sh
-sed -i 's/minimum-gas-prices *=.*/minimum-gas-prices = "0.0001uempe"/' ${DAEMON_HOME}/config/app.toml
+sed -i 's/minimum-gas-prices *=.*/minimum-gas-prices = "0note"/' ${DAEMON_HOME}/config/app.toml
 ```
 
 ### Setting up Cosmovisor
 
 ```bash
-sudo tee /etc/systemd/system/emped.service > /dev/null <<EOF  
+sudo tee /etc/systemd/system/symphonyd.service > /dev/null <<EOF  
 [Unit]
-Description=Empeiria Testnet Daemon (cosmovisor)
+Description=Symphony Testnet Daemon (cosmovisor)
 After=network-online.target
 
 [Service]
@@ -164,14 +176,14 @@ EOF
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable emped.service
-sudo systemctl start emped.service
+sudo systemctl enable symphonyd.service
+sudo systemctl start symphonyd.service
 ```
 
 #### Check service log
 
 ```bash
-sudo journalctl -xfu emped
+sudo journalctl -xfu symphonyd
 ```
 
 ### Cleanup

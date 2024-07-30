@@ -1,32 +1,32 @@
 # Endpoints and Sync
 
-RPC: [https://empe-testnet-rpc.cryptonode.id](https://empe-testnet-rpc.cryptonode.id)
+RPC: [https://symphony-testnet-rpc.cryptonode.id](https://symphony-testnet-rpc.cryptonode.id)
 
-API: [https://empe-testnet-api.cryptonode.id](https://empe-testnet-api.cryptonode.id)
+API: [https://symphony-testnet-api.cryptonode.id](https://symphony-testnet-api.cryptonode.id)
 
 
 
 {% code title="Peers" %}
 ```sh
-f1e730c741c7edb89e4610e2f24993c5ca2e028b@sentry1.cryptonode.id:22656,66ac611ba87753e92f1e5d792a2b19d4c5080f32@sentry2.cryptonode.id:22656
+a6591002cea520b51d5037646d7b597e8fc42be4@sentry1.cryptonode.id:23656,8fc13eb23bb09225d08b4da9bb80ab3b2c008990@sentry2.cryptonode.id:23656
 ```
 {% endcode %}
 
 ## State Sync
 
 ```sh
-DAEMON_HOME="${HOME}/.empe-chain"
-SERVICE_NAME="emped"
+DAEMON_HOME="${HOME}/.symphonyd"
+SERVICE_NAME="symphonyd"
 
 sudo systemctl stop ${SERVICE_NAME}
 
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/priv_validator_state.json.backup
 cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/priv_validator_key.json.backup
 
-emped tendermint unsafe-reset-all --home ${DAEMON_HOME}
+symphonyd tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
 PEERS="f1e730c741c7edb89e4610e2f24993c5ca2e028b@sentry1.cryptonode.id:22656,66ac611ba87753e92f1e5d792a2b19d4c5080f32@sentry2.cryptonode.id:22656,edfc10bbf28b5052658b3b8b901d7d0fc25812a0@193.70.45.145:26656,4bd60dee1cb81cb544f545589b8dd286a7b3fd65@149.202.73.140:26656,149383fab60d8845c408dce7bb93c05aa1fd115e@54.37.80.141:26656"
-SNAP_RPC="https://empe-testnet-rpc.cryptonode.id:443"
+SNAP_RPC="https://symphony-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
@@ -52,9 +52,9 @@ sudo journalctl -fu ${SERVICE_NAME}
 ## Snapshot Restore
 
 ```sh
-DAEMON_HOME=$HOME/.empe-chain
-SERVICE_NAME=emped
-NETWORK=empe-testnet
+DAEMON_HOME=$HOME/.symphonyd
+SERVICE_NAME=symphonyd
+NETWORK=symphony-testnet
 
 sudo systemctl stop ${SERVICE_NAME}
 cp ${DAEMON_HOME}/data/priv_validator_state.json ${DAEMON_HOME}/priv_validator_state.json.backup
