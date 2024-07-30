@@ -197,4 +197,4 @@ rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 
 You can visit our repository and follow the instruction there
 
-[https://github.com/CryptoNodeID/empe-chain](https://github.com/CryptoNodeID/empe-chain)
+[https://github.com/CryptoNodeID/symphony](https://github.com/CryptoNodeID/symphony)
