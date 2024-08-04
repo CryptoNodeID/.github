@@ -51,12 +51,14 @@ You can monitor our cosmos node status here: [https://monitor.cryptonode.id](htt
 * <img src=".gitbook/assets/chainflip.png" alt="" data-size="line">Chainflip Validator Node - Status : 🟢Online
 * <img src=".gitbook/assets/CrossFi Logo (1).png" alt="" data-size="line">CrossFi Validator Node - Status : 🟢Online
   * [Guide](testnet/crossfi/) | [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi) | [Stake to our node](https://testnet.cryptonode.id/crossfi/staking/mxvaloper17rcy08cjnwsagglylmclfx85j8ss9lepvd4jdu)
-*
+* Empeiria Validator Node - Status : 🟢Online
+  * [Guide](testnet/empe-chain/) | [Telegram](https://t.me/CryptoNodeID/305) | [Github](https://github.com/CryptoNodeID/empe-chain) | [Stake to our node](https://testnet.cryptonode.id/empe/staking/empevaloper1vs2wljsf6qg6mgwjr7zfgmp0w8525wupp3f3p7) | [Faucet](https://testnet.cryptonode.id/empe/faucet)
 * <img src=".gitbook/assets/image (2) (1).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online
   * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
 * <img src=".gitbook/assets/shardeum.png" alt="" data-size="line">Shardeum (SHM) Validator Node - Status : 🟡Waiting Release
   * [Guide ](testnet/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
-*
+* Symphony Validator Node - Status : 🟢Online
+  * [Guide](testnet/symphony/) | [Telegram](https://t.me/CryptoNodeID/306) | [Github](https://github.com/CryptoNodeID/symphony) | [Stake to our node](https://testnet.cryptonode.id/symphony/staking/symphonyvaloper1swayw9a9wa97gpw4xye37dvektzsfq6h9vf9y7)
 * <img src=".gitbook/assets/image (1) (1) (1).png" alt="" data-size="line">StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
   * [Guide ](archived/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
 * <img src=".gitbook/assets/warden.png" alt="" data-size="line">Warden Protocol Validator Node - Status : 🟢Online
