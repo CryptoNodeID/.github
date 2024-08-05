@@ -1,8 +1,8 @@
 # Endpoints and Sync
 
-RPC: [https://empe-testnet-rpc.cryptonode.id](https://empe-testnet-rpc.cryptonode.id)
+RPC: [https://empeiria-testnet-rpc.cryptonode.id](https://empeiria-testnet-rpc.cryptonode.id)
 
-API: [https://empe-testnet-api.cryptonode.id](https://empe-testnet-api.cryptonode.id)
+API: [https://empeiria-testnet-api.cryptonode.id](https://empeiria-testnet-api.cryptonode.id)
 
 
 
@@ -26,7 +26,7 @@ cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/priv_validator_k
 emped tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
 PEERS="f1e730c741c7edb89e4610e2f24993c5ca2e028b@sentry1.cryptonode.id:22656,66ac611ba87753e92f1e5d792a2b19d4c5080f32@sentry2.cryptonode.id:22656,edfc10bbf28b5052658b3b8b901d7d0fc25812a0@193.70.45.145:26656,4bd60dee1cb81cb544f545589b8dd286a7b3fd65@149.202.73.140:26656,149383fab60d8845c408dce7bb93c05aa1fd115e@54.37.80.141:26656"
-SNAP_RPC="https://empe-testnet-rpc.cryptonode.id:443"
+SNAP_RPC="https://empeiria-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);
