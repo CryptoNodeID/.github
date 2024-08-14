@@ -23,15 +23,17 @@ layout:
 
 ### Who are we ?
 
-We're a community who like to share our work and educate people who don't know about how to do it but really interested in it. We're not some Pro - Pro, still learning by doing, hope we can learn together 😁
+We are a community passionate about sharing our work and educating those eager to learn. We may not be experts, but we believe in learning through experience and hope to grow together. 😁
 
 ### How to contact us ?
 
 You can join our Telegram Channel here :
 
+* Landing Page : [https://cryptonode.id](https://cryptonode.id)
 * Main Channel : [https://t.me/CryptoNodeID](https://t.me/CryptoNodeID)
 * Comment Group : [https://t.me/CryptoNodeIDGroup](https://t.me/CryptoNodeIDGroup)
 * Focus Discussion Group : [https://t.me/CryptoNodeIDLearn](https://t.me/CryptoNodeIDLearn)
+* Discord : [https://dsc.gg/cryptonodeid](https://dsc.gg/cryptonodeid)
 
 ## List of Our Works
 
