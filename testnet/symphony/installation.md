@@ -76,7 +76,7 @@ git clone https://github.com/Orchestra-Labs/symphony
 cd symphony
 git checkout v0.3.0
 make build
-mv build/${DAEMON_NAME} ${DAEMON_NAME}
+mv build/${DAEMON_NAME} ${INSTALLATION_DIR}/bin/${DAEMON_NAME}
 
 #Download and install cosmovisor
 wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.6.0/cosmovisor-v1.6.0-linux-amd64.tar.gz
