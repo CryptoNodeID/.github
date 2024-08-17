@@ -75,7 +75,7 @@ symphonyd tx staking create-validator \
   --website=${WEBSITE} \
   --security-contact=${CONTACT} \
   --details=${DETAILS} \
-  --chain-id=empe-testnet-2 \
+  --chain-id=empe-testnet-3 \
   --commission-rate="0.05" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
@@ -96,7 +96,7 @@ When a validator is "jailed" for downtime, you must submit an `Unjail` transacti
 ```bash
 emped tx slashing unjail \
 --from=${WALLET} \
---chain-id=empe-testnet-2 \
+--chain-id=empe-testnet-3 \
 --fees=800note
 ```
 

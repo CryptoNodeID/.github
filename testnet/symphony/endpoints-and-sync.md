@@ -8,7 +8,7 @@ API: [https://symphony-testnet-api.cryptonode.id](https://symphony-testnet-api.c
 
 {% code title="Peers" %}
 ```sh
-a6591002cea520b51d5037646d7b597e8fc42be4@sentry1.cryptonode.id:23656,8fc13eb23bb09225d08b4da9bb80ab3b2c008990@sentry2.cryptonode.id:23656
+a495c12eac37c0eb92ae8b2af5bcc7ede5534772@sentry1.cnd.biz.id:23656
 ```
 {% endcode %}
 
@@ -25,7 +25,7 @@ cp ${DAEMON_HOME}/config/priv_validator_key.json ${DAEMON_HOME}/priv_validator_k
 
 symphonyd tendermint unsafe-reset-all --home ${DAEMON_HOME}
 
-PEERS="a6591002cea520b51d5037646d7b597e8fc42be4@sentry1.cryptonode.id:23656,8fc13eb23bb09225d08b4da9bb80ab3b2c008990@sentry2.cryptonode.id:23656"
+PEERS="a495c12eac37c0eb92ae8b2af5bcc7ede5534772@sentry1.cnd.biz.id:23656"
 SNAP_RPC="https://symphony-testnet-rpc.cryptonode.id:443"
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ${DAEMON_HOME}/config/config.toml 

@@ -21,7 +21,7 @@ layout:
 
 | Chain ID           | Latest Version Tag |
 | ------------------ | ------------------ |
-| symphony-testnet-2 | v0.2.1             |
+| symphony-testnet-3 | v0.3.0             |
 
 <img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/symphony](https://testnet.cryptonode.id/symphony/staking)\
 <img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [https://testnet.cryptonode.id/symphony/staking/](https://testnet.cryptonode.id/symphony/staking/symphonyvaloper1swayw9a9wa97gpw4xye37dvektzsfq6h9vf9y7)\

@@ -74,13 +74,13 @@ cd ${INSTALLATION_DIR}
 #Clone Symphony Repo and build binary
 git clone https://github.com/Orchestra-Labs/symphony
 cd symphony
-git checkout v0.2.1
+git checkout v0.3.0
 make build
 mv build/${DAEMON_NAME} ${DAEMON_NAME}
 
 #Download and install cosmovisor
-wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.5.0/cosmovisor-v1.5.0-linux-amd64.tar.gz
-tar -xvzf cosmovisor-v1.5.0-linux-amd64.tar.gz
+wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.6.0/cosmovisor-v1.6.0-linux-amd64.tar.gz
+tar -xvzf cosmovisor-v1.6.0-linux-amd64.tar.gz
 
 #Copy Binaries
 cp cosmovisor ${INSTALLATION_DIR}/bin/cosmovisor
@@ -100,7 +100,7 @@ symphonyd --home ${DAEMON_HOME} version
 ### Download genesis.json
 
 ```sh
-wget https://snapshot.cryptonode.id/symphony-testnet/genesis.json -O ${DAEMON_HOME}/config/genesis.json
+wget https://raw.githubusercontent.com/Orchestra-Labs/symphony/v0.3.0/networks/symphony-testnet-3/genesis.json -O ${DAEMON_HOME}/config/genesis.json
 ```
 
 ### Create or Restore Wallet
@@ -189,7 +189,7 @@ sudo journalctl -xfu symphonyd
 ### Cleanup
 
 ```bash
-rm -f cosmovisor-v1.5.0-linux-amd64.tar.gz
+rm -f cosmovisor-v1.6.0-linux-amd64.tar.gz
 rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 ```
 
