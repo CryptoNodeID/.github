@@ -32,6 +32,10 @@ cd openssl-1.1.1o
 mkdir $HOME/opt/lib
 mv $HOME/opt/openssl-1.1.1o/libcrypto.so.1.1 $HOME/opt/lib/
 mv $HOME/opt/openssl-1.1.1o/libssl.so.1.1 $HOME/opt/lib/
+sudo rm /usr/lib/libssl.so.1.1
+sudo rm /usr/lib64/libssl.so.1.1
+sudo rm /usr/lib/libcrypto.so.1.1
+sudo rm /usr/lib64/libcrypto.so.1.1
 sudo ln -s $HOME/opt/lib/libssl.so.1.1 /usr/lib/libssl.so.1.1
 sudo ln -s $HOME/opt/lib/libssl.so.1.1 /usr/lib64/libssl.so.1.1
 sudo ln -s $HOME/opt/lib/libcrypto.so.1.1 /usr/lib/libcrypto.so.1.1

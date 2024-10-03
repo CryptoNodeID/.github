@@ -1,6 +1,6 @@
 # Monitoring
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>sample alert</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption><p>sample alert</p></figcaption></figure>
 
 This simple script will monitor your node and send alert to your telegram chat/group when your bioauth is about to end or already in inactive state.
 
@@ -10,7 +10,7 @@ This simple script will monitor your node and send alert to your telegram chat/g
 
 go to Telegram, search for [@BotFather](http://t.me/BotFather)&#x20;
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt="" width="224"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt="" width="224"><figcaption></figcaption></figure>
 
 type in `/start` to interact with @BotFather and create your bot with `/newbot` command
 
