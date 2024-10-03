@@ -91,7 +91,7 @@ sudo ln -s ${DAEMON_HOME}/cosmovisor/current/bin/${DAEMON_NAME} /usr/local/bin/$
 ```
 {% endcode %}
 
-#### Check emped version
+#### Check symphonyd version
 
 ```sh
 symphonyd --home ${DAEMON_HOME} version
