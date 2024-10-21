@@ -6,7 +6,7 @@ API: [https://crossfi-mainnet-api.cryptonode.id](https://crossfi-mainnet-api.cry
 
 {% code title="Peers" %}
 ```sh
-44ca9e03a9c016ce148d19e877a8652662bbd71b@crossfi-mainnet-peer.cryptonode.id:30656
+1985bfd22cf1baeb5aaae6b40b13632c28303bd1@sentry2.cryptonode.id:30656
 ```
 {% endcode %}
 

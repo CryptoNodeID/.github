@@ -17,7 +17,7 @@ If you use other OS, please modify the commands accordingly
 ```sh
 export INSTALLATION_DIR=${HOME}/appl
 export DAEMON_NAME=crossfid
-export DAEMON_HOME=${HOME}/.mineplex-chain
+export DAEMON_HOME=${HOME}/.crossfid
 export SERVICE_NAME=crossfi-mainnet
 export MONIKER="YOUR_NODE_NAME_HERE"
 export WALLET="YOUR_WALLET_NAME_HERE"
@@ -62,13 +62,13 @@ mkdir -p ${DAEMON_HOME}/cosmovisor/upgrades
 cd ${INSTALLATION_DIR}
 
 #Download CrossFi Daemon and basic setup
-wget https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz && tar -xf mineplex-2-node._v0.1.1_linux_amd64.tar.gz
-mv mineplex-chaind bin/${DAEMON_NAME}
+wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0/crossfi-node_0.3.0_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0_linux_amd64.tar.gz
+mv crossfid bin/${DAEMON_NAME}
 git clone https://github.com/crossfichain/mainnet.git
 
 #Download and install cosmovisor
-wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.5.0/cosmovisor-v1.5.0-linux-amd64.tar.gz
-tar -xvzf cosmovisor-v1.5.0-linux-amd64.tar.gz
+wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.6.0/cosmovisor-v1.6.0-linux-amd64.tar.gz
+tar -xvzf cosmovisor-v1.6.0-linux-amd64.tar.gz
 
 #Copy Binaries
 cp cosmovisor /usr/local/bin/cosmovisor -f
@@ -85,7 +85,7 @@ crossfid --home ${DAEMON_HOME} version
 ```
 
 {% hint style="info" %}
-For mainnet, the version should be `0.1.1`
+For mainnet, the version should be `0.3.0`
 {% endhint %}
 
 ### Create or Restore Wallet
@@ -168,8 +168,8 @@ sudo journalctl -xfu crossfi-mainnet
 ### Cleanup
 
 ```bash
-rm -f cosmovisor-v1.5.0-linux-amd64.tar.gz
-rm -f mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+rm -f cosmovisor-v1.6.0-linux-amd64.tar.gz
+rm -f crossfi-node_0.3.0_linux_amd64.tar.gz
 rm -f README.md CHANGELOG.md LICENSE readme.md cosmovisor
 ```
 
