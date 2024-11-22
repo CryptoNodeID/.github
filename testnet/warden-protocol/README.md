@@ -19,9 +19,10 @@ layout:
 
 # Warden Protocol
 
-| Chain ID     | Latest Version Tag |
-| ------------ | ------------------ |
-| buenavista-1 | v0.3.2             |
+| Chain ID       | Latest Version Tag |
+| -------------- | ------------------ |
+| buenavista-1   | v0.3.2             |
+| chiado\_1000-1 | v0.5.4             |
 
 <img src="https://web.telegram.org/a/img-apple-64/1f5fa.png" alt="🗺️" data-size="line">Explorer: [https://testnet.cryptonode.id/warden](https://testnet.cryptonode.id/warden)\
 <img src="https://web.telegram.org/a/img-apple-64/1f5a5.png" alt="🖥️" data-size="line">Our Node: [https://testnet.cryptonode.id/warden/staking/](https://testnet.cryptonode.id/warden/staking/wardenvaloper1snltatg5pwrukrlpxy4zwerqds7za8txgl6jeq)\

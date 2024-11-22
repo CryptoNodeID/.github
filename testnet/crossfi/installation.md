@@ -7,6 +7,8 @@
 \- Memory: 32GB\
 \- Storage: 500GB-2TB
 
+You can get your server here : ![🖥](https://web.telegram.org/a/blank.8dd283bceccca95a48d8.png)[Click Here to Rent VPS from €4.50/month](https://www.dpbolvw.net/bi103shqnhp465665C69E46ABE79DB?sid=CNID-R)
+
 ## 📝Manual Installation
 
 This guide is created under the assumption you are using Ubuntu 22.04 LTS\

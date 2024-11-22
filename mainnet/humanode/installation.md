@@ -8,12 +8,15 @@
 \- Storage: 160 GB disk space \
 \- Network: 100 Mbps internet connection
 
+You can get your server here : ![🖥](https://web.telegram.org/a/blank.8dd283bceccca95a48d8.png)[Click Here to Rent VPS from €4.50/month](https://www.dpbolvw.net/bi103shqnhp465665C69E46ABE79DB?sid=CNID-R)\
+
+
 ## 📽️Video Installation Instruction
 
 You can follow instruction in this video to install your Humanode Validator node
 
 {% embed url="https://youtu.be/AAkVG_g73-g" %}
-Source: [https://www.youtube.com/watch?v=AAkVG\_g73-g](https://www.youtube.com/watch?v=AAkVG\_g73-g)
+Source: [https://www.youtube.com/watch?v=AAkVG\_g73-g](https://www.youtube.com/watch?v=AAkVG_g73-g)
 {% endembed %}
 
 ## Troubleshooting
