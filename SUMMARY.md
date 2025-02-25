@@ -32,6 +32,8 @@
     * [Installation](testnet/empe-chain/installation.md)
     * [Validator Setup](testnet/empe-chain/validator-setup.md)
     * [Cheat Sheet](testnet/empe-chain/cheat-sheet.md)
+  * [Ethereum and Arbitrum Sepolia](testnet/ethereum-and-arbitrum-sepolia/README.md)
+    * [Installation](testnet/ethereum-and-arbitrum-sepolia/installation.md)
   * [Symphony](testnet/symphony/README.md)
     * [Endpoints and Sync](testnet/symphony/endpoints-and-sync.md)
     * [Installation](testnet/symphony/installation.md)
