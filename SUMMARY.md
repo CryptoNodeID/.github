@@ -27,6 +27,7 @@
     * [Installation](testnet/cortensor/installation.md)
     * [Multiple Node Setup](testnet/cortensor/multiple-node-setup/README.md)
       * [VM Method](testnet/cortensor/multiple-node-setup/vm-method.md)
+      * [Docker Method](testnet/cortensor/multiple-node-setup/docker-method.md)
   * [CrossFi](testnet/crossfi/README.md)
     * [Endpoints and Sync](testnet/crossfi/endpoints-and-sync.md)
     * [Installation](testnet/crossfi/installation.md)
