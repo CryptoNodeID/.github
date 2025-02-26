@@ -55,13 +55,13 @@ You can monitor our cosmos node status here: [https://monitor.cryptonode.id](htt
   * [Guide](testnet/crossfi/) | [Telegram](https://t.me/CryptoNodeID/44) | [Github](https://github.com/CryptoNodeID/crossfi) | [Stake to our node](https://testnet.cryptonode.id/crossfi/staking/mxvaloper17rcy08cjnwsagglylmclfx85j8ss9lepvd4jdu)
 * Empeiria Validator Node - Status : 🟢Online
   * [Guide](testnet/empe-chain/) | [Telegram](https://t.me/CryptoNodeID/305) | [Github](https://github.com/CryptoNodeID/empe-chain) | [Stake to our node](https://testnet.cryptonode.id/empe/staking/empevaloper1vs2wljsf6qg6mgwjr7zfgmp0w8525wupp3f3p7) | [Faucet](https://testnet.cryptonode.id/empe/faucet)
-* <img src=".gitbook/assets/image (6).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online
+* <img src=".gitbook/assets/image (6) (1).png" alt="" data-size="line">NuLink Worker Node - Status : 🟢Online
   * [Guide ](testnet/nulink.md)| [Telegram](https://t.me/CryptoNodeID/21)
 * <img src=".gitbook/assets/shardeum.png" alt="" data-size="line">Shardeum (SHM) Validator Node - Status : 🟡Waiting Release
   * [Guide ](testnet/shardeum.md)| [Telegram](https://t.me/CryptoNodeID/9)
 * Symphony Validator Node - Status : 🟢Online
   * [Guide](testnet/symphony/) | [Telegram](https://t.me/CryptoNodeID/306) | [Github](https://github.com/CryptoNodeID/symphony) | [Stake to our node](https://testnet.cryptonode.id/symphony/staking/symphonyvaloper1swayw9a9wa97gpw4xye37dvektzsfq6h9vf9y7)
-* <img src=".gitbook/assets/image (5).png" alt="" data-size="line">StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
+* <img src=".gitbook/assets/image (5) (1).png" alt="" data-size="line">StratisEVM (STRAX) Validator Node - Status : ✅Testnet Done
   * [Guide ](archived/stratis-evm.md)| [Telegram](https://t.me/CryptoNodeID/8) | [Github](https://github.com/CryptoNodeID/stratisEVM)
 * <img src=".gitbook/assets/warden.png" alt="" data-size="line">Warden Protocol Validator Node - Status : 🟢Online
   * [Guide](testnet/warden-protocol/) | [Telegram](https://t.me/CryptoNodeID/126) | [Github](https://github.com/CryptoNodeID/warden) | [Stake to our node](https://testnet.cryptonode.id/warden/staking/wardenvaloper1snltatg5pwrukrlpxy4zwerqds7za8txgl6jeq)
@@ -74,7 +74,7 @@ You can monitor our cosmos node status here: [https://monitor.cryptonode.id](htt
 
 * <img src=".gitbook/assets/galactica.png" alt="" data-size="line">Galactica Validator Node - Status : 🔴Dropped (no allocation)
   * [Guide](archived/galactica/) | [Telegram](https://t.me/CryptoNodeID/144) | [Github](https://github.com/CryptoNodeID/galactica) | [Stake to our node](https://testnet.cryptonode.id/galactica/staking/galavaloper1dtnwm55x8mhjjxghcnrz45082dw98q87zufd4t)
-* <img src=".gitbook/assets/image.png" alt="" data-size="line">Initia Validator Node - Status : 🔴Dropped (no allocation)
+* <img src=".gitbook/assets/image (35).png" alt="" data-size="line">Initia Validator Node - Status : 🔴Dropped (no allocation)
   * [Guide](archived/initia/) | [Telegram](https://t.me/CryptoNodeID/184) | [Github](https://github.com/CryptoNodeID/initia) | [Stake to our node](https://app.testnet.initia.xyz/validator/initvaloper1unsxpj424zdp97hps29wdwhu9uhl4ec5kwm5wm)
 * <img src=".gitbook/assets/mantra (2).png" alt="" data-size="line">Mantrachain Validator Node - Status : 🔴Dropped (no allocation)
   * [Guide](archived/mantrachain/) | [Telegram](https://t.me/CryptoNodeID/121) | [Github](https://github.com/CryptoNodeID/mantrachain) | [Stake to our node](https://testnet.cryptonode.id/mantrachain/staking/mantravaloper1r4u3pr2c4vcjwehvw6u56t98zducjsy7qzy0z7)

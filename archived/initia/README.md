@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/image (1).png
+cover: ../../.gitbook/assets/image (1) (1).png
 coverY: -21.957333333333334
 layout:
   cover:

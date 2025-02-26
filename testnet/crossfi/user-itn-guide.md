@@ -6,11 +6,11 @@ Go to [XFI Console](https://testnet.xficonsole.com)\
 Click on "Create new wallet"\
 or if you already have the seed phrase, click on "Log in with a seed phrase"
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you logged in, you will see this screen
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 Leave it there first, we will need it later
 
@@ -18,11 +18,11 @@ After that, restore that same phrase to your Metamask
 
 Open your Metamask and click on "Import an existing wallet"
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt="" width="461"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1).png" alt="" width="461"><figcaption></figcaption></figure>
 
 Paste the same Phrase that you use before in xficonsole, then press "Confirm"
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt="" width="457"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt="" width="457"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 It will automatically extend the format to 15 phrase
@@ -37,19 +37,19 @@ After that, input your password and confirm.
 Now you already successfully restored your wallet to Metamask\
 Here's the main part, go to [XFI Testpad](https://testpad.xfi.foundation), then click on "Sign up"
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Connect
 
 You will be prompted to connect your wallet, click on "Next" and "Connect"
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1).png" alt="" width="252"><figcaption></figcaption></figure>
 
 ### Approve
 
 After that, it will prompt you to add new network, click on "Approve" and "Switch network"
 
-<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
@@ -205,6 +205,6 @@ And then click on "Import"
 
 Then it will show up like this
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can proceed to send it to your desired address
