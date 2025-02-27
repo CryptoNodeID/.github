@@ -28,14 +28,6 @@ If you use other OS, please modify the commands accordingly
 It's recommended to run the command using <kbd>root</kbd> user
 {% endhint %}
 
-#### Download Installer <a href="#download-installer" id="download-installer"></a>
-
-```sh
-curl -L https://github.com/cortensor/installer/archive/main.tar.gz -o cortensor-installer-latest.tar.gz
-tar xzfv cortensor-installer-latest.tar.gz
-cd installer
-```
-
 #### Clone Installer <a href="#clone-installer" id="clone-installer"></a>
 
 ```sh
