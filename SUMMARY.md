@@ -6,6 +6,7 @@
   * [Setting up DNS](basics/setting-up-dns.md)
   * [Routing using NGINX](basics/routing-using-nginx.md)
   * [Setting up SSL](basics/setting-up-ssl.md)
+  * [Security Setup](basics/security-setup.md)
 * [Advance](advance/README.md)
   * [Proxmox Setup with 1 Public IP](advance/proxmox-setup-with-1-public-ip.md)
 * [Mainnet](mainnet/README.md)

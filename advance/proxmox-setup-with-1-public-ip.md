@@ -155,31 +155,31 @@ Select <kbd>local-lvm</kbd> in the <kbd>Storag</kbd>e section > put <kbd>100</kb
 
 Set <kbd>Sockets</kbd> and <kbd>Cores</kbd> depends to your need and <kbd>Type</kbd> to <kbd>host</kbd> for the best performance > <kbd>Next</kbd>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Memory
 
 Set the <kbd>Memory</kbd> depends on your need > <kbd>Next</kbd>&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Network
 
 Select the bridge that you created previously > <kbd>Next</kbd>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Confirm
 
 In the confirmation page, you will see the summary of the VM. Optionally, you can tick <kbd>Start after created</kbd> so it will start immediately > <kbd>Finish</kbd>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### OS Installation
 
 After VM Creation, go to <kbd>Datacenter</kbd> > <kbd>your server name</kbd> > <kbd>Console</kbd>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Continue the installation as prompted
 
