@@ -7,11 +7,15 @@
 \- Memory: 12GB\
 \- Storage: 100GB
 
-You can get your server here : ![🖥](https://web.telegram.org/a/blank.8dd283bceccca95a48d8.png)[Click Here to Rent VPS from €4.50/month](https://www.dpbolvw.net/bi103shqnhp465665C69E46ABE79DB?sid=CNID-R)
+You can get your server here : ![🖥](https://web.telegram.org/a/blank.8dd283bceccca95a48d8.png)[Click Here to Rent VPS from €4.50/month](https://www.dpbolvw.net/d7108hz74z6MONOONUORWMOPRSRSWP?sid=Redd)
+
+{% hint style="success" %}
+We recommend to get VPS 6C for more stable performance
+{% endhint %}
 
 ## 💭Prerequisites
 
-You need to have 2000 $COR staked per node for 84 days  in [Cortensor staking platform](https://stake.cortensor.network/)
+You need to have 2000 $COR staked per node for 84 days in [Cortensor staking platform](https://stake.cortensor.network/)
 
 {% hint style="warning" %}
 If you want to run 5, then stake 10k $COR
