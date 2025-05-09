@@ -2,7 +2,8 @@
 
 ## 💭Prerequisites
 
-You have the server ready by following [this guide](../../../advance/proxmox-setup-with-1-public-ip.md)
+1. Dedicated Server. You can get affordable [dedicated server with high performance here](https://billing.fiberstate.com/aff.php?aff=185), if you plan to run multiple nodes
+2. &#x20;You have the server ready by following [this guide](../../../advance/proxmox-setup-with-1-public-ip.md)
 
 ## 🛠️Installation <a href="#install-binary" id="install-binary"></a>
 

@@ -10,8 +10,10 @@
 You can get your server here : ![🖥](https://web.telegram.org/a/blank.8dd283bceccca95a48d8.png)[Click Here to Rent VPS from €4.50/month](https://www.dpbolvw.net/d7108hz74z6MONOONUORWMOPRSRSWP?sid=Redd)
 
 {% hint style="success" %}
-We recommend to get VPS 6C for more stable performance
+We recommend to get VPS 20 for more stable performance
 {% endhint %}
+
+Even better, you can get affordable [dedicated server with high performance here](https://billing.fiberstate.com/aff.php?aff=185), if you plan to run multiple nodes
 
 ## 💭Prerequisites
 
