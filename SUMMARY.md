@@ -20,6 +20,8 @@
     * [Validator Setup](mainnet/crossfi/validator-setup.md)
     * [Cheat Sheet](mainnet/crossfi/cheat-sheet.md)
 * [Testnet](testnet/README.md)
+  * [Aztec Network](testnet/aztec-network/README.md)
+    * [Installation](testnet/aztec-network/installation.md)
   * [Airchain](testnet/airchain/README.md)
     * [Endpoints and Sync](testnet/airchain/endpoints-and-sync.md)
     * [Installation](testnet/airchain/installation.md)
