@@ -37,6 +37,13 @@ mkdir -p $HOME/sepolia-eth/prysm-data
 mkdir -p $HOME/sepolia-eth/jwt
 ```
 
+#### Prepare .env file to prevent permission issue
+
+```bash
+echo "UID=$(id -u)" >> .env
+echo "GID=$(id -g)" >> .env
+```
+
 #### Run ETH Sepolia Docker
 
 ```sh
@@ -61,7 +68,14 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 {% endcode %}
 {% endhint %}
 
-## ⟠ Arbitrum
+Notable Ports:
+
+* 22545 -> RPC endpoint
+* 22546 -> WS endpoint
+* 22551 -> Auth endpoint
+* 22500 -> Beacon endpoint
+
+### ⟠ Arbitrum
 
 {% hint style="warning" %}
 Before preparing Arbitrum, better to wait until ETH node completed the sync
@@ -78,6 +92,13 @@ cd sepolia-eth
 
 ```sh
 mkdir -p $home/sepolia-arb/arb-data
+```
+
+#### Prepare .env file to prevent permission issue
+
+```bash
+echo "UID=$(id -u)" >> .env
+echo "GID=$(id -g)" >> .env
 ```
 
 #### Run ETH Sepolia Docker
@@ -103,3 +124,8 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 ```
 {% endcode %}
 {% endhint %}
+
+Notable Ports:
+
+* 22557 -> RPC endpoint
+* 22558 -> WS endpoint
