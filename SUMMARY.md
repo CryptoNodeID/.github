@@ -22,6 +22,7 @@
 * [Testnet](testnet/README.md)
   * [Aztec Network](testnet/aztec-network/README.md)
     * [Installation](testnet/aztec-network/installation.md)
+    * [Validator](testnet/aztec-network/validator.md)
   * [Airchain](testnet/airchain/README.md)
     * [Endpoints and Sync](testnet/airchain/endpoints-and-sync.md)
     * [Installation](testnet/airchain/installation.md)

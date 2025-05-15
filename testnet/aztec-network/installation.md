@@ -12,6 +12,12 @@
 
 Have Docker installed in your system, if you don't, please follow [this guide](../../basics/server-preparation.md#install-docker-optional)
 
+{% hint style="warning" %}
+For better performance, We suggest you to run your own RPC.
+
+You can follow our guide to install [#ethereum](../ethereum-and-arbitrum-sepolia/installation.md#ethereum "mention") Sepolia RPC.
+{% endhint %}
+
 ## 🛠️Installation <a href="#install-binary" id="install-binary"></a>
 
 {% hint style="success" %}
