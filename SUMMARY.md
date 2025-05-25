@@ -9,6 +9,7 @@
   * [Security Setup](basics/security-setup.md)
 * [Advance](advance/README.md)
   * [Proxmox Setup with 1 Public IP](advance/proxmox-setup-with-1-public-ip.md)
+* [Helper Scripts](helper-scripts.md)
 * [Mainnet](mainnet/README.md)
   * [Humanode](mainnet/humanode/README.md)
     * [Installation](mainnet/humanode/installation.md)
