@@ -1,6 +1,6 @@
 # Helper Scripts
 
-### Aztec Network
+### Aztec Network | [aztec-network](testnet/aztec-network/ "mention")
 
 {% code overflow="wrap" %}
 ```sh
@@ -24,7 +24,7 @@ bash -c "$(wget -qLO - https://raw.githubusercontent.com/CryptoNodeID/helper-scr
 ```
 {% endcode %}
 
-### Sepolia ETH
+### Sepolia ETH | [ethereum-and-arbitrum-sepolia](testnet/ethereum-and-arbitrum-sepolia/ "mention")
 
 {% code overflow="wrap" %}
 ```sh
